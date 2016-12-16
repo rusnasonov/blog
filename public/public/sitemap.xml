@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://rusnassonov.ru/</loc>
+    <lastmod>2016-03-18T17:06:31+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnassonov.ru/books/clean_code/</loc>
+    <lastmod>2016-03-18T17:06:31+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnassonov.ru/tools/terminator/</loc>
+    <lastmod>2016-01-20T22:01:46+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnassonov.ru/books/agile_results/</loc>
+    <lastmod>2015-12-23T23:33:19+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnassonov.ru/tools/zeal/</loc>
+    <lastmod>2015-12-15T11:00:11+06:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,31 @@
+baseurl = "https://rusnassonov.ru/"
+languageCode = "en-us"
+title = "my mind"
+theme = "hyde"
+
+[params]
+  description = " "
+  googleAnalytics="UA-73974245-1"
+  yandexMetrica=35459907
+  #disqusShortname= "rusnassonov"
+
+[[menu.main]]
+    name = "tools"
+    weight = 0
+    identifier = "tools"
+    url = "/tools/"
+
+[[menu.main]]
+    name = "python"
+    weight = 0
+    url = "/python/"
+
+[[menu.main]]
+    name = "productivity"
+    weight = 0
+    url = "/productivity/"
+
+[[menu.main]]
+    name = "books"
+    weight = 0
+    url = "/books/"

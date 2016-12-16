@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on My mind</title>
+    <link>http://rusnassonov.ru/categories/golang/</link>
+    <description>Recent content in Golang on My mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Dec 2015 14:50:45 +0600</lastBuildDate>
+    <atom:link href="http://rusnassonov.ru/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>second</title>
+      <link>http://rusnassonov.ru/post/second/</link>
+      <pubDate>Mon, 07 Dec 2015 14:50:45 +0600</pubDate>
+      
+      <guid>http://rusnassonov.ru/post/second/</guid>
+      <description>&lt;p&gt;This is second hello world post&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>http://rusnassonov.ru/post/first/</link>
+      <pubDate>Mon, 07 Dec 2015 14:22:12 +0600</pubDate>
+      
+      <guid>http://rusnassonov.ru/post/first/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Hello&lt;/h1&gt;
+
+&lt;h2 id=&#34;hello-1:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Hello&lt;/h2&gt;
+
+&lt;h3 id=&#34;hello-2:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Hello&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;hello&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;hello&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is hello world post&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

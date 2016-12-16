@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on my mind</title>
+    <link>https://rusnassonov.ru/tags/books/</link>
+    <description>Recent content in Books on my mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Mar 2016 17:06:31 +0600</lastBuildDate>
+    <atom:link href="https://rusnassonov.ru/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Чистый код</title>
+      <link>https://rusnassonov.ru/books/clean_code/</link>
+      <pubDate>Fri, 18 Mar 2016 17:06:31 +0600</pubDate>
+      
+      <guid>https://rusnassonov.ru/books/clean_code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile Results</title>
+      <link>https://rusnassonov.ru/books/agile_results/</link>
+      <pubDate>Wed, 23 Dec 2015 23:33:19 +0600</pubDate>
+      
+      <guid>https://rusnassonov.ru/books/agile_results/</guid>
+      <description>&lt;p&gt;Что почитать:
+&lt;a href=&#34;http://betteri.ru/post/agile-results---novyy-podhod-k-lichnoy-effektivnosti-opisanie-osnovnyh-priemov-i-principov.html&#34;&gt;betteri.ru&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

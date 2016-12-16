@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag1 on My mind</title>
+    <link>http://rusnassonov.ru/tags/tag1/</link>
+    <description>Recent content in Tag1 on My mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://rusnassonov.ru/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Info</title>
+      <link>http://rusnassonov.ru/themes/grid-side/examplesite/content/custompost/info/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/grid-side/examplesite/content/custompost/info/</guid>
+      <description>&lt;p&gt;You can optionally set an image in the front matter of a post using
+&lt;code&gt;image = &amp;quot;...&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Info</title>
+      <link>http://rusnassonov.ru/themes/grid-side/examplesite/content/post/info/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/grid-side/examplesite/content/post/info/</guid>
+      <description>&lt;p&gt;You can optionally set an image in the front matter of a post using
+&lt;code&gt;image = &amp;quot;...&amp;quot;&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Redirect</title>
+      <link>http://rusnassonov.ru/themes/grid-side/examplesite/content/custompost/redirect/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/grid-side/examplesite/content/custompost/redirect/</guid>
+      <description>&lt;p&gt;You can optionally set the front matter &lt;code&gt;redirect = &amp;quot;url&amp;quot;&lt;/code&gt; to automatically
+redirect the content to another page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Redirect</title>
+      <link>http://rusnassonov.ru/themes/grid-side/examplesite/content/post/redirect/</link>
+      <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/grid-side/examplesite/content/post/redirect/</guid>
+      <description>&lt;p&gt;You can optionally set the front matter &lt;code&gt;redirect = &amp;quot;url&amp;quot;&lt;/code&gt; to automatically
+redirect the content to another page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post title</title>
+      <link>http://rusnassonov.ru/themes/hugo-multi-bootswatch/archetypes/post/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hugo-multi-bootswatch/archetypes/post/</guid>
+      <description>&lt;p&gt;Content of the file goes here&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post title</title>
+      <link>http://rusnassonov.ru/themes/journal/archetypes/post/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/journal/archetypes/post/</guid>
+      <description>&lt;p&gt;Content of the file goes here&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Post title</title>
+      <link>http://rusnassonov.ru/themes/air/archetypes/post-title/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/air/archetypes/post-title/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post title</title>
+      <link>http://rusnassonov.ru/themes/casper/archetypes/post-title/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/casper/archetypes/post-title/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>my mind</title>
+    <link>https://rusnassonov.ru/tags/zeal/index.xml</link>
+    <description>Recent content on my mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://rusnassonov.ru/tags/zeal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Zeal - браузер документации</title>
+      <link>https://rusnassonov.ru/tools/zeal/</link>
+      <pubDate>Tue, 15 Dec 2015 11:00:11 +0600</pubDate>
+      
+      <guid>https://rusnassonov.ru/tools/zeal/</guid>
+      <description>&lt;p&gt;Zeal - open-source программа для оффлайн просмотра документации. Его создатели вдохновились браузером документации для OSX &lt;a href=&#34;https://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt;. Доступен для Linux и Windows. &lt;a href=&#34;https://github.com/zealdocs/zeal&#34;&gt;Репозиторий на GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Основные возможности Zeal:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Быстрый поиск по документации, используя горячие клавиши.&lt;/li&gt;
+&lt;li&gt;Поиск во многих наборах документации.&lt;/li&gt;
+&lt;li&gt;Не требуется интернет соединение&lt;/li&gt;
+&lt;li&gt;Имеет интеграции с IDEA, Sublime Text, VIM, Emacs, Atom.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://kapeli.com/dash#docsets&#34;&gt;Вся документация&lt;/a&gt;, которая доступна для Dash, доступна и для Zeal. Всего есть более 150 наборов документации. Так-же есть возможность создавать пользовательские наборы. Dash я не пользовался, но судя по описанию функциональность у него побогаче.&lt;/p&gt;
+
+&lt;p&gt;Основная функция Zeal - поиск по документации. Можно искать как в конкретном наборе, так и во всех наборах документации. Инструмент очень простой, и очень удобный. Кажется, что основная фишка Zeal - это то, что документация хранится локально. Но для меня не менее важным является то, что она хранится в одном месте. Это очень удобно, когда работаешь с несколькими технологиями.&lt;/p&gt;
+
+&lt;p&gt;В данный момент у меня загружены наборы для Bash, Bootstrap, Django, Go, HTML, MongoDB, Mongoengine, Nginx, Python.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

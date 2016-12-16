@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quote-rsses on my mind</title>
+    <link>https://rusnassonov.ru/quote/index.xml</link>
+    <description>Recent content in Quote-rsses on my mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://rusnassonov.ru/quote/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>https://rusnassonov.ru/quote/all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnassonov.ru/quote/all/</guid>
+      <description>
+
+&lt;h1 id=&#34;герберт-саймон&#34;&gt;Герберт Саймон&lt;/h1&gt;
+
+&lt;p&gt;Стабильные сложные системы обычно представлены в форме иерархии, где
+любая система состоит из более простых подсистем, каждая из которых тоже
+состоит из более простых подсистем&lt;/p&gt;
+
+&lt;p&gt;Стабильные сложные системы почти не поддаются декомпозиции&lt;/p&gt;
+
+&lt;p&gt;Стабильные сложные системы почти всегда состоят из подсистем лишь
+нескольких разных типов, упорядоченных в разных комбинациях&lt;/p&gt;
+
+&lt;p&gt;Стабильные сложные системы почти всегда развиваются из простых рабочих
+систем&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

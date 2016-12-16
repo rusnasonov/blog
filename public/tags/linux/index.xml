@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>my mind</title>
+    <link>https://rusnassonov.ru/tags/linux/index.xml</link>
+    <description>Recent content on my mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://rusnassonov.ru/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Terminator - удобный терминал для linux</title>
+      <link>https://rusnassonov.ru/tools/terminator/</link>
+      <pubDate>Wed, 20 Jan 2016 22:01:46 +0600</pubDate>
+      
+      <guid>https://rusnassonov.ru/tools/terminator/</guid>
+      <description>&lt;p&gt;Терминал является одним из основных инструментов для пользователя Linux. Поэтому их существует достаточно большое количество. Я работал не со всеми, но за несколькими самыми известными. Основная причина, по которой я выбрал &lt;a href=&#34;https://launchpad.net/terminator&#34;&gt;Terminator&lt;/a&gt; - это удобное создание нескольких рабочих окон. Можно сколько угодно дробить окно как по горизонтали, так и по вертикали.&lt;/p&gt;
+
+&lt;p&gt;Так-же можно работать и со вкладками окон, но мне обычно хватает четыре окна в рамках одной вкладки. Переключаться между окнами и вклалками можно с помощью горячих клавиш, можно сделать окно активным при наведении курсора мыши. Есть возможность поменять тему.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

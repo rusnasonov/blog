@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on My mind</title>
+    <link>http://rusnassonov.ru/tags/hugo/</link>
+    <description>Recent content in Hugo on My mind</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 10 Oct 2015 16:56:43 +0200</lastBuildDate>
+    <atom:link href="http://rusnassonov.ru/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introducing Icarus and it&#39;s features</title>
+      <link>http://rusnassonov.ru/themes/hugo-icarus/examplesite/content/post/introducing-icarus-and-its-features/</link>
+      <pubDate>Sat, 10 Oct 2015 16:56:43 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hugo-icarus/examplesite/content/post/introducing-icarus-and-its-features/</guid>
+      <description>
+
+&lt;p&gt;Icarus is a responsive and customizable theme for bloggers. It&amp;rsquo;s a port of the same-named theme for &lt;a href=&#34;//hexo.io&#34;&gt;Hexo&lt;/a&gt; made by &lt;a href=&#34;https://github.com/ppoffice&#34;&gt;Ruipeng Zhang&lt;/a&gt;. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, localization (l10n) support, syntax highlighting for source code, optional widgets for the sidebar and a handful &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; to make your life easier.&lt;/p&gt;
+
+&lt;h2 id=&#34;get-the-theme:33ea911532f0c95309659f2412cd62cb&#34;&gt;Get the theme&lt;/h2&gt;
+
+&lt;p&gt;I assume you&amp;rsquo;ve Git installed. Inside the folder of your Hugo site run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ mkdir themes
+$ cd themes
+$ git clone git@github.com:digitalcraftsman/hugo-icarus-theme.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see a folder called &lt;code&gt;hugo-icarus-theme&lt;/code&gt; inside the &lt;code&gt;themes&lt;/code&gt; directory, that we created a few moments ago. For more information read the official &lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;setup guide&lt;/a&gt; of Hugo.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup:33ea911532f0c95309659f2412cd62cb&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;In the next step navigate to the &lt;code&gt;exampleSite&lt;/code&gt; folder at &lt;code&gt;themes/hugo-icarus-theme/exampleSite/&lt;/code&gt;. It&amp;rsquo;s structure shoud look similar to this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;exampleSite
+├── config.toml
+├── content
+│   └── post
+│       ├── creating-a-new-theme.md
+│       ├── go-is-for-lovers.md
+│       ├── hugo-is-for-lovers.md
+│       ├── introducing-icarus-and-its-features.md
+│       ├── linked-post.md
+│       └── migrate-from-jekyll.md
+├── data
+│   └── l10n.toml
+└── static
+    └── banners
+        └── placeholder.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to get your site running, you need to copy &lt;code&gt;config.toml&lt;/code&gt; and &lt;code&gt;data/l10n.toml&lt;/code&gt; into the root folders.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-config-file:33ea911532f0c95309659f2412cd62cb&#34;&gt;The config file&lt;/h2&gt;
+
+&lt;p&gt;Now, let us take a look into the &lt;code&gt;config.toml&lt;/code&gt;. Feel free to play around with the settings.&lt;/p&gt;
+
+&lt;h3 id=&#34;comments:33ea911532f0c95309659f2412cd62cb&#34;&gt;Comments&lt;/h3&gt;
+
+&lt;p&gt;The opional comment system is powered by Disqus. Enter your shortname to enable the comment section under your posts.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;disqusShortname = &amp;quot;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;menu:33ea911532f0c95309659f2412cd62cb&#34;&gt;Menu&lt;/h3&gt;
+
+&lt;p&gt;You can also define the items menu entries as you like. First, let us link a post that you&amp;rsquo;ve written. We can do this in the frontmatter of the post&amp;rsquo;s content file by setting &lt;code&gt;menu&lt;/code&gt; to &lt;code&gt;main&lt;/code&gt;. Take a look at the menu if you want to see a live example.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+++
+menu = &amp;quot;main&amp;quot;
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Furthermore, we can add entries that don&amp;rsquo;t link to posts. Back in the &lt;code&gt;config.toml&lt;/code&gt; you&amp;rsquo;ll find a section for the menus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[[params.menu]]
+    before = true
+    label  = &amp;quot;Home&amp;quot;
+    link   = &amp;quot;/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Define a label and enter the URL to resource you want to link. With &lt;code&gt;before&lt;/code&gt; you can decide wether the link should appear before &lt;strong&gt;or&lt;/strong&gt; after all linked posts in the menu. &lt;code&gt;Home&lt;/code&gt; appears before the linked post, &lt;code&gt;Tags&lt;/code&gt; and &lt;code&gt;Categories&lt;/code&gt; after them (as in the menu above).&lt;/p&gt;
+
+&lt;h3 id=&#34;tell-me-who-you-re:33ea911532f0c95309659f2412cd62cb&#34;&gt;Tell me who you&amp;rsquo;re&lt;/h3&gt;
+
+&lt;p&gt;Maybe you noticed the profile section on the left. Add your social network accounts to the profile section on the left by entering your username under &lt;code&gt;social&lt;/code&gt;. The links to your account will be create automatically.&lt;/p&gt;
+
+&lt;h3 id=&#34;widgets:33ea911532f0c95309659f2412cd62cb&#34;&gt;Widgets&lt;/h3&gt;
+
+&lt;p&gt;On the right, you can see some useful widgets that you can activate as you like. You can deactivate them under &lt;code&gt;params.widgets&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[params.widgets]
+    recent_articles = false
+    categories = true
+    tags = true
+    tag_cloud = true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;localization-l10n:33ea911532f0c95309659f2412cd62cb&#34;&gt;Localization (l10n)&lt;/h2&gt;
+
+&lt;p&gt;You don&amp;rsquo;t blog in english and you want to translate the theme into your native locale? No problem. Take a look in the &lt;code&gt;data&lt;/code&gt; folder and you&amp;rsquo;ll find a file &lt;code&gt;l10n.toml&lt;/code&gt; that we&amp;rsquo;ve copied at the beginning. It contains all strings related to the theme. Just replace the original strings with your own.&lt;/p&gt;
+
+&lt;h2 id=&#34;linking-thumbnails:33ea911532f0c95309659f2412cd62cb&#34;&gt;Linking thumbnails&lt;/h2&gt;
+
+&lt;p&gt;After creating a new post you can define a banner by entering the relative path to the image.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;banner = &amp;quot;banners/placeholder.png&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This way you can store them either next to the content file or in the &lt;code&gt;static&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;h2 id=&#34;mathematical-equations:33ea911532f0c95309659f2412cd62cb&#34;&gt;Mathematical equations&lt;/h2&gt;
+
+&lt;p&gt;In case you need to display equations you can insert your Latex or MathML code and it works out of the box thanks to &lt;a href=&#34;https://www.mathjax.org&#34;&gt;MathJax&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;\[ z = r \cdot (\sin{\phi} + \cos{\phi} \cdot i) \]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[ z = r \cdot (\sin{\phi} + \cos{\phi} \cdot i) ]&lt;/p&gt;
+
+&lt;h2 id=&#34;shortcodes:33ea911532f0c95309659f2412cd62cb&#34;&gt;Shortcodes&lt;/h2&gt;
+
+&lt;p&gt;Last but not least I included some useful &lt;a href=&#34;http://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt; to make your like easier.&lt;/p&gt;
+
+&lt;h3 id=&#34;gallery:33ea911532f0c95309659f2412cd62cb&#34;&gt;Gallery&lt;/h3&gt;
+
+&lt;p&gt;This way you can include a gallery into your post. Copy the code below into your content file and enter the relative paths to your images.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; gallery
+    &amp;quot;/banners/placeholder.png&amp;quot;
+    &amp;quot;/banners/placeholder.png&amp;quot;
+    &amp;quot;/banners/placeholder.png&amp;quot;
+&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Migrate from Jekyll</title>
+      <link>http://rusnassonov.ru/themes/hugo-minimalist/examplesite/content/post/migrate-from-jekyll/</link>
+      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hugo-minimalist/examplesite/content/post/migrate-from-jekyll/</guid>
+      <description>
+
+&lt;h2 id=&#34;move-static-content-to-static:964c172ef5e837f03573891408d8d631&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
+With Jekyll, something that looked like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
+    ▾ images/
+        logo.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;should become&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;▾ &amp;lt;root&amp;gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as &lt;code&gt;CNAME&lt;/code&gt;) to be moved to &lt;code&gt;static&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;create-your-hugo-configuration-file:964c172ef5e837f03573891408d8d631&#34;&gt;Create your Hugo configuration file&lt;/h2&gt;
+
+&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;http://rusnassonov.ru/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
+
+&lt;h2 id=&#34;set-your-configuration-publish-folder-to-site:964c172ef5e837f03573891408d8d631&#34;&gt;Set your configuration publish folder to &lt;code&gt;_site&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;The default is for Jekyll to publish to &lt;code&gt;_site&lt;/code&gt; and for Hugo to publish to &lt;code&gt;public&lt;/code&gt;. If, like me, you have &lt;a href=&#34;http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html&#34;&gt;&lt;code&gt;_site&lt;/code&gt; mapped to a git submodule on the &lt;code&gt;gh-pages&lt;/code&gt; branch&lt;/a&gt;, you&amp;rsquo;ll want to do one of two alternatives:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Change your submodule to point to map &lt;code&gt;gh-pages&lt;/code&gt; to public instead of &lt;code&gt;_site&lt;/code&gt; (recommended).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git submodule deinit _site
+git rm _site
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Or, change the Hugo configuration to use &lt;code&gt;_site&lt;/code&gt; instead of &lt;code&gt;public&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    ..
+    &amp;quot;publishdir&amp;quot;: &amp;quot;_site&amp;quot;,
+    ..
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;convert-jekyll-templates-to-hugo-templates:964c172ef5e837f03573891408d8d631&#34;&gt;Convert Jekyll templates to Hugo templates&lt;/h2&gt;
+
+&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;http://rusnassonov.ru/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
+
+&lt;p&gt;As a single reference data point, converting my templates for &lt;a href=&#34;http://heyitsalex.net/&#34;&gt;heyitsalex.net&lt;/a&gt; took me no more than a few hours.&lt;/p&gt;
+
+&lt;h2 id=&#34;convert-jekyll-plugins-to-hugo-shortcodes:964c172ef5e837f03573891408d8d631&#34;&gt;Convert Jekyll plugins to Hugo shortcodes&lt;/h2&gt;
+
+&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;http://rusnassonov.ru/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
+
+&lt;h3 id=&#34;implementation:964c172ef5e837f03573891408d8d631&#34;&gt;Implementation&lt;/h3&gt;
+
+&lt;p&gt;As an example, I was using a custom &lt;a href=&#34;https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb&#34;&gt;&lt;code&gt;image_tag&lt;/code&gt;&lt;/a&gt; plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.&lt;/p&gt;
+
+&lt;p&gt;Jekyll&amp;rsquo;s plugin:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;module Jekyll
+  class ImageTag &amp;lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&amp;quot;(.*?)&amp;quot;(\s+)-&amp;gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&amp;quot;(.*?)&amp;quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &amp;quot;&amp;lt;figure class=&#39;#{@class}&#39;&amp;gt;&amp;quot;
+      else
+        source = &amp;quot;&amp;lt;figure&amp;gt;&amp;quot;
+      end
+      if @link
+        source += &amp;quot;&amp;lt;a href=\&amp;quot;#{@link}\&amp;quot;&amp;gt;&amp;quot;
+      end
+      source += &amp;quot;&amp;lt;img src=\&amp;quot;#{@url}\&amp;quot;&amp;gt;&amp;quot;
+      if @link
+        source += &amp;quot;&amp;lt;/a&amp;gt;&amp;quot;
+      end
+      source += &amp;quot;&amp;lt;figcaption&amp;gt;#{@caption}&amp;lt;/figcaption&amp;gt;&amp;quot; if @caption
+      source += &amp;quot;&amp;lt;/figure&amp;gt;&amp;quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;is written as this Hugo shortcode:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- image --&amp;gt;
+&amp;lt;figure {{ with .Get &amp;quot;class&amp;quot; }}class=&amp;quot;{{.}}&amp;quot;{{ end }}&amp;gt;
+    {{ with .Get &amp;quot;link&amp;quot;}}&amp;lt;a href=&amp;quot;{{.}}&amp;quot;&amp;gt;{{ end }}
+        &amp;lt;img src=&amp;quot;{{ .Get &amp;quot;src&amp;quot; }}&amp;quot; {{ if or (.Get &amp;quot;alt&amp;quot;) (.Get &amp;quot;caption&amp;quot;) }}alt=&amp;quot;{{ with .Get &amp;quot;alt&amp;quot;}}{{.}}{{else}}{{ .Get &amp;quot;caption&amp;quot; }}{{ end }}&amp;quot;{{ end }} /&amp;gt;
+    {{ if .Get &amp;quot;link&amp;quot;}}&amp;lt;/a&amp;gt;{{ end }}
+    {{ if or (or (.Get &amp;quot;title&amp;quot;) (.Get &amp;quot;caption&amp;quot;)) (.Get &amp;quot;attr&amp;quot;)}}
+    &amp;lt;figcaption&amp;gt;{{ if isset .Params &amp;quot;title&amp;quot; }}
+        {{ .Get &amp;quot;title&amp;quot; }}{{ end }}
+        {{ if or (.Get &amp;quot;caption&amp;quot;) (.Get &amp;quot;attr&amp;quot;)}}&amp;lt;p&amp;gt;
+        {{ .Get &amp;quot;caption&amp;quot; }}
+        {{ with .Get &amp;quot;attrlink&amp;quot;}}&amp;lt;a href=&amp;quot;{{.}}&amp;quot;&amp;gt; {{ end }}
+            {{ .Get &amp;quot;attr&amp;quot; }}
+        {{ if .Get &amp;quot;attrlink&amp;quot;}}&amp;lt;/a&amp;gt; {{ end }}
+        &amp;lt;/p&amp;gt; {{ end }}
+    &amp;lt;/figcaption&amp;gt;
+    {{ end }}
+&amp;lt;/figure&amp;gt;
+&amp;lt;!-- image --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;usage:964c172ef5e837f03573891408d8d631&#34;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;I simply changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &amp;quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &amp;quot;having fun&amp;quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&amp;quot; -&amp;gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to this (this example uses a slightly extended version named &lt;code&gt;fig&lt;/code&gt;, different than the built-in &lt;code&gt;figure&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{% fig class=&amp;quot;full&amp;quot; src=&amp;quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&amp;quot; title=&amp;quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&amp;quot; link=&amp;quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&amp;quot; %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As a bonus, the shortcode named parameters are, arguably, more readable.&lt;/p&gt;
+
+&lt;h2 id=&#34;finishing-touches:964c172ef5e837f03573891408d8d631&#34;&gt;Finishing touches&lt;/h2&gt;
+
+&lt;h3 id=&#34;fix-content:964c172ef5e837f03573891408d8d631&#34;&gt;Fix content&lt;/h3&gt;
+
+&lt;p&gt;Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that &lt;code&gt;hugo server --watch&lt;/code&gt; is your friend. Test your changes and fix errors as needed.&lt;/p&gt;
+
+&lt;h3 id=&#34;clean-up:964c172ef5e837f03573891408d8d631&#34;&gt;Clean up&lt;/h3&gt;
+
+&lt;p&gt;You&amp;rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&amp;rsquo;t used, delete it.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-practical-example-in-a-diff:964c172ef5e837f03573891408d8d631&#34;&gt;A practical example in a diff&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://heyitsalex.net/&#34;&gt;Hey, it&amp;rsquo;s Alex&lt;/a&gt; was migrated in less than a &lt;em&gt;father-with-kids day&lt;/em&gt; from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this &lt;a href=&#34;https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610&#34;&gt;diff&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linked post</title>
+      <link>http://rusnassonov.ru/themes/hugo-icarus/examplesite/content/post/linked-post/</link>
+      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hugo-icarus/examplesite/content/post/linked-post/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;menu = &amp;quot;main&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus. Pellentesque sed tempus risus. Proin id hendrerit ante. Vestibulum vitae urna ut mauris ultricies dignissim. Ut ante turpis, tristique vitae sagittis quis, sagittis nec diam. Fusce pulvinar cursus porta. Vivamus maximus leo dolor, ut pellentesque lorem fringilla nec. Mauris faucibus turpis posuere sapien euismod, a ullamcorper mi maximus.&lt;/p&gt;
+
+&lt;p&gt;Morbi varius ex vel justo dictum placerat. Sed ac arcu pretium, varius elit eget, gravida purus. Fusce sit amet massa mollis eros tincidunt sollicitudin. Suspendisse iaculis cursus mauris ut sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas elit ligula, molestie quis magna eu, semper posuere lorem. Mauris a justo pharetra, congue ex eget, tincidunt massa. Maecenas sit amet neque lorem.&lt;/p&gt;
+
+&lt;p&gt;Curabitur at elementum quam. Curabitur tristique elit non sapien aliquam vulputate. Vivamus in odio tincidunt, tempor sem quis, tincidunt lacus. Mauris pulvinar nunc sed tempus dictum. Nam vel arcu quis mi fermentum ullamcorper non ac lacus. Donec aliquet vitae ante at imperdiet. Aenean scelerisque venenatis urna, eget elementum risus convallis ac. Nullam gravida arcu lacus, non consectetur augue pretium non. Duis dignissim eros id urna pretium congue. Nullam eu magna in sem sollicitudin tempor. Pellentesque vel convallis ligula. Quisque semper, turpis a rhoncus efficitur, magna nibh iaculis elit, eget tempor dolor eros ut mi. Maecenas eu placerat lacus. Praesent congue pretium nulla, sed suscipit metus rutrum vel.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo is for lovers</title>
+      <link>http://rusnassonov.ru/themes/hugo-minimalist/examplesite/content/post/hugo-is-for-lovers/</link>
+      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hugo-minimalist/examplesite/content/post/hugo-is-for-lovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:88aac7a07addfbee771d05b85cb8c827&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:88aac7a07addfbee771d05b85cb8c827&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:88aac7a07addfbee771d05b85cb8c827&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:88aac7a07addfbee771d05b85cb8c827&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Beg</title>
+      <link>http://rusnassonov.ru/themes/beg/content/post/about-beg/</link>
+      <pubDate>Sat, 10 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/beg/content/post/about-beg/</guid>
+      <description>
+
+&lt;p&gt;Beg is a double-column theme for &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Inspired by &lt;a href=&#34;https://github.com/kAworu/octostrap3&#34;&gt;kAworu/octostrap3&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;features:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Features&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Google Analytics&lt;/li&gt;
+&lt;li&gt;Disqus&lt;/li&gt;
+&lt;li&gt;SNS Links(Facebook, Twitter, GitHub)&lt;/li&gt;
+&lt;li&gt;Share Button&lt;/li&gt;
+&lt;li&gt;Tagging&lt;/li&gt;
+&lt;li&gt;Related Post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;installation:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Installation&lt;/h1&gt;
+
+&lt;p&gt;Referred from &lt;a href=&#34;https://github.com/spf13/hugoThemes#installing-themes&#34;&gt;hugoThemes#Installing Themes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;installing-with-other-all-themes:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Installing with other all themes&lt;/h2&gt;
+
+&lt;p&gt;If you would like to install all of the available hugo themes, simply clone the entire repository from within your working directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;git clone --recursive https://github.com/spf13/hugoThemes.git themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;installing-a-single-theme:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Installing a single theme&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;mkdir themes
+cd themes
+git clone https://github.com/dim0627/hugo_theme_beg beg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;build-with-beg:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Build with Beg&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;hugo server -t beg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;configuration:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Configuration&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;config.yaml&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;BaseUrl: &amp;quot;http://yet.unresolved.xyz&amp;quot;
+LanguageCode: &amp;quot;en-us&amp;quot;
+Title: &amp;quot;Beg&amp;quot;
+
+Params:
+  Author: &amp;quot;Daisuke Tsuji&amp;quot;
+  DateForm: &amp;quot;Mon, Jan 2, 2006&amp;quot;
+  GoogleAnalyticsUserID: &amp;quot;UA-55005303-5&amp;quot;
+  Facebook: &amp;quot;daisuke.tsuji.735&amp;quot;
+  Twitter: &amp;quot;dim0627&amp;quot;
+  Github: &amp;quot;dim0627&amp;quot;
+  ShowRelatedPost: True
+  Disqus: &amp;quot;unresolved&amp;quot;
+  SyntaxHighlightTheme: &amp;quot;github.min.css&amp;quot;
+
+Indexes:
+  tag: &amp;quot;tags&amp;quot;
+
+permalinks:
+  post: /blog/:year/:month/:day/:slug/
+
+MetadataFormat: &amp;quot;yaml&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Example : &lt;a href=&#34;https://github.com/dim0627/hugo_theme_beg/blob/source/config.yaml&#34;&gt;My config.yaml&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;example post&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;Post title here&amp;quot;
+date: 2014-09-17
+comments: true
+tags: [gitHub, octopress, jekyll]
+---
+
+Contents here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;contact-us:33aa6c1cc1b431231d6c5fbeeebf5cd4&#34;&gt;Contact us&lt;/h1&gt;
+
+&lt;p&gt;Please mail to &lt;code&gt;dim0627@gmail.com&lt;/code&gt; or SNS.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/daisuke.tsuji.735&#34;&gt;https://www.facebook.com/daisuke.tsuji.735&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dim0627&#34;&gt;https://twitter.com/dim0627&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Aglausについて</title>
+      <link>http://rusnassonov.ru/themes/aglaus/content/post/about-aglaus-ja/</link>
+      <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/aglaus/content/post/about-aglaus-ja/</guid>
+      <description>
+
+&lt;h2 id=&#34;hugo用テーマ-aglaus-について:0019966881bb613675405e5cc20328ee&#34;&gt;Hugo用テーマ[Aglaus]について&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/dim0627/hugo_theme_aglaus&#34;&gt;Aglaus&lt;/a&gt;はGolangで書かれた静的サイトジェネレータ、&lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;用のテーマです。&lt;/p&gt;
+
+&lt;p&gt;導入方法については&lt;a href=&#34;https://github.com/dim0627/hugo_theme_aglaus&#34;&gt;Aglaus&lt;/a&gt;の&lt;code&gt;README.md&lt;/code&gt;を参照してください。&lt;/p&gt;
+
+&lt;h3 id=&#34;コメント:0019966881bb613675405e5cc20328ee&#34;&gt;コメント&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt;が導入出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;config.yaml&lt;/code&gt;の&lt;code&gt;Disqus&lt;/code&gt;を設定し、記事のMarkdownに&lt;code&gt;comments: true&lt;/code&gt;を設定してください。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_disqus.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_disqus.png&#34; class=&#34;image&#34; alt=&#34;disqus&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;設定されなかった場合、コメント欄は表示されません。&lt;/p&gt;
+
+&lt;p&gt;特定の記事のみコメントを拒否する場合は、&lt;code&gt;comments&lt;/code&gt;を未設定にするか、&lt;code&gt;false&lt;/code&gt;を設定してください。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+date: 2015-01-06
+comments: false
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;アイキャッチ画像:0019966881bb613675405e5cc20328ee&#34;&gt;アイキャッチ画像&lt;/h3&gt;
+
+&lt;p&gt;記事単位にアイキャッチ画像が設定出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_eyecatch.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_eyecatch.png&#34; class=&#34;image&#34; alt=&#34;eyecatch&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;記事のMarkdownファイルに&lt;code&gt;eyecatch&lt;/code&gt;を設定し、&lt;code&gt;static/images/&lt;/code&gt;以下に画像を配備してください。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+eyecatch: &amp;quot;hugo.png&amp;quot;
+date: 2015-01-06
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;不要な場合は記述を削除することでデフォルト画像が表示されます。&lt;/p&gt;
+
+&lt;h3 id=&#34;タギング:0019966881bb613675405e5cc20328ee&#34;&gt;タギング&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;tags&lt;/code&gt;を設定することで、記事にタグをつけることが出来ます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+date: 2015-01-06
+tags: [&amp;quot;hugo&amp;quot;, &amp;quot;aglaus&amp;quot;]
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;タグは記事個別ページの下部に表示され、関連する投稿のインデクシングに利用されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34; class=&#34;image&#34; alt=&#34;tags&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;関連する投稿:0019966881bb613675405e5cc20328ee&#34;&gt;関連する投稿&lt;/h3&gt;
+
+&lt;p&gt;タグを基準に関連する投稿を表示します。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34; class=&#34;image&#34; alt=&#34;tags&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;config.yaml&lt;/code&gt;の&lt;code&gt;ShowRelatedPost&lt;/code&gt;を&lt;code&gt;False&lt;/code&gt;にすることで非表示にできます。&lt;/p&gt;
+
+&lt;p&gt;その場合、タグも表示されなくなります。&lt;/p&gt;
+
+&lt;h3 id=&#34;プロフィール:0019966881bb613675405e5cc20328ee&#34;&gt;プロフィール&lt;/h3&gt;
+
+&lt;p&gt;ページ下部にプロフィールを表示出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34; class=&#34;image&#34; alt=&#34;profile&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;表示する情報は&lt;a href=&#34;https://gravatar.com/&#34;&gt;Gravatar&lt;/a&gt;から取得しているため、&lt;code&gt;config.yaml&lt;/code&gt;に&lt;code&gt;GravatarHash&lt;/code&gt;を設定する必要があります。&lt;/p&gt;
+
+&lt;p&gt;ハッシュの取得については&lt;a href=&#34;https://ja.gravatar.com/site/implement/hash/&#34;&gt;Creating the Hash&lt;/a&gt;を参照してください。&lt;/p&gt;
+
+&lt;p&gt;設定がない場合、プロフィールは表示されません。&lt;/p&gt;
+
+&lt;h3 id=&#34;ソーシャルリンク:0019966881bb613675405e5cc20328ee&#34;&gt;ソーシャルリンク&lt;/h3&gt;
+
+&lt;p&gt;プロフィールに&lt;a href=&#34;https://www.facebook.com/&#34;&gt;Facebook&lt;/a&gt;、&lt;a href=&#34;https://twitter.com/&#34;&gt;Twitter&lt;/a&gt;、&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;のリンクを配置出来ます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34; class=&#34;image&#34; alt=&#34;profile&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;config.yaml&lt;/code&gt;に&lt;code&gt;Facebook&lt;/code&gt;、&lt;code&gt;Twitter&lt;/code&gt;、&lt;code&gt;Github&lt;/code&gt;のIDを設定する必要があります。&lt;/p&gt;
+
+&lt;p&gt;設定がない場合、リンクは表示されません。&lt;/p&gt;
+
+&lt;h3 id=&#34;シェアボタン:0019966881bb613675405e5cc20328ee&#34;&gt;シェアボタン&lt;/h3&gt;
+
+&lt;p&gt;ページ最下部にシェアボタンが表示されます。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_share.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_share.png&#34; class=&#34;image&#34; alt=&#34;share&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://sharebutton.net/&#34;&gt;SHAREBUTTON&lt;/a&gt;のプラグインを利用しています。&lt;/p&gt;
+
+&lt;h2 id=&#34;お問い合わせ:0019966881bb613675405e5cc20328ee&#34;&gt;お問い合わせ&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/daisuke.tsuji.735&#34;&gt;https://www.facebook.com/daisuke.tsuji.735&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dim0627&#34;&gt;https://twitter.com/dim0627&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about-aglaus</title>
+      <link>http://rusnassonov.ru/themes/aglaus/content/post/2015-01-06-about-aglaus/</link>
+      <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/aglaus/content/post/2015-01-06-about-aglaus/</guid>
+      <description>
+
+&lt;h2 id=&#34;about-hugo-theme-aglaus:d353d6db6e7381ac46c882e900710e6a&#34;&gt;About hugo theme [Aglaus]&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/dim0627/hugo_theme_aglaus&#34;&gt;Aglaus&lt;/a&gt; is theme for &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please refer to the &lt;code&gt;README.md&lt;/code&gt; of &lt;a href=&#34;https://github.com/dim0627/hugo_theme_aglaus&#34;&gt;Aglaus&lt;/a&gt; for introduction method.&lt;/p&gt;
+
+&lt;h3 id=&#34;comment:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Comment&lt;/h3&gt;
+
+&lt;p&gt;You can use &lt;a href=&#34;https://disqus.com/&#34;&gt;Disqus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Set &lt;code&gt;Disqus&lt;/code&gt; to &lt;code&gt;config.yaml&lt;/code&gt;, and set &lt;code&gt;comments: true&lt;/code&gt; to Markdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_disqus.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_disqus.png&#34; class=&#34;image&#34; alt=&#34;disqus&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you did not set, the comments section is not displayed.&lt;/p&gt;
+
+&lt;p&gt;If you want to deny a comment only particular article, you can either unset the &lt;code&gt;comments&lt;/code&gt;, please set the &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+date: 2015-01-06
+comments: false
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;eyecatch-image:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Eyecatch image&lt;/h3&gt;
+
+&lt;p&gt;Eye-catching image can be set to the article unit.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_eyecatch.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_eyecatch.png&#34; class=&#34;image&#34; alt=&#34;eyecatch&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Set the &lt;code&gt;eyecatch&lt;/code&gt; to Markdown file of articles, please deploy the image to &lt;code&gt;static/images/&lt;/code&gt; below.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+eyecatch: &amp;quot;hugo.png&amp;quot;
+date: 2015-01-06
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you did not set, default image is displayed.&lt;/p&gt;
+
+&lt;h3 id=&#34;tag:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Tag&lt;/h3&gt;
+
+&lt;p&gt;By setting the &lt;code&gt;tags&lt;/code&gt;, you can tag the article.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;---
+title: &amp;quot;about-aglaus&amp;quot;
+date: 2015-01-06
+tags: [&amp;quot;hugo&amp;quot;, &amp;quot;aglaus&amp;quot;]
+---
+
+## About hugo theme [Aglaus]
+ :
+ :
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Tag is displayed at the bottom of the article individual pages, will be used in the indexing of related posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34; class=&#34;image&#34; alt=&#34;tags&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;related-post:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Related Post&lt;/h3&gt;
+
+&lt;p&gt;Display posts associated with the reference tags.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_tags.png&#34; class=&#34;image&#34; alt=&#34;tags&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can hide it by the &lt;code&gt;ShowRelatedPost&lt;/code&gt; of &lt;code&gt;config.yaml&lt;/code&gt; to &lt;code&gt;False&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In that case, also will not be displayed tag.&lt;/p&gt;
+
+&lt;h3 id=&#34;profile:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Profile&lt;/h3&gt;
+
+&lt;p&gt;Profile is displayed at the bottom of the page.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34; class=&#34;image&#34; alt=&#34;profile&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Information of profile getting from &lt;a href=&#34;https://gravatar.com/&#34;&gt;Gravatar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please set the &lt;code&gt;GravatarHash&lt;/code&gt; to &lt;code&gt;config.yaml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please refer to the &lt;a href=&#34;https://ja.gravatar.com/site/implement/hash/&#34;&gt;Creating the Hash&lt;/a&gt; for hash of the acquisition.&lt;/p&gt;
+
+&lt;p&gt;If you did not set, profie is not displayed.&lt;/p&gt;
+
+&lt;h3 id=&#34;social-links:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Social Links&lt;/h3&gt;
+
+&lt;p&gt;You can place a link on &lt;a href=&#34;https://www.facebook.com/&#34;&gt;Facebook&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_profile.png&#34; class=&#34;image&#34; alt=&#34;profile&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You need to set the ID of the &amp;lsquo;Facebook&amp;rsquo; and &amp;lsquo;Twitter&amp;rsquo; and &amp;lsquo;Github&amp;rsquo; to &amp;lsquo;config.yaml&amp;rsquo;.&lt;/p&gt;
+
+&lt;h3 id=&#34;share-buttons:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Share Buttons&lt;/h3&gt;
+
+&lt;p&gt;Share buttons is displayed at the bottom of the page.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_share.png&#34;&gt;&lt;img src=&#34;http://rusnassonov.ru/hugo_theme_aglaus/images/desc_share.png&#34; class=&#34;image&#34; alt=&#34;share&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the plugin &lt;a href=&#34;http://sharebutton.net/&#34;&gt;SHAREBUTTON&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;contact-me:d353d6db6e7381ac46c882e900710e6a&#34;&gt;Contact Me&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.facebook.com/daisuke.tsuji.735&#34;&gt;https://www.facebook.com/daisuke.tsuji.735&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/dim0627&#34;&gt;https://twitter.com/dim0627&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/aglaus/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/aglaus/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/beg/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/beg/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/cactus/examplesite/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/cactus/examplesite/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/ghostwriter/examplesite/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/ghostwriter/examplesite/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/hikari/examplesite/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/hikari/examplesite/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/robust/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/robust/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>http://rusnassonov.ru/themes/steam/examplesite/content/post/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnassonov.ru/themes/steam/examplesite/content/post/hugoisforlovers/</guid>
+      <description>
+
+&lt;h2 id=&#34;step-1-install-hugo:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
+
+&lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
+appropriate version for your os and architecture.&lt;/p&gt;
+
+&lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
+
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://rusnassonov.ru/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;step-2-build-the-docs:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
+
+&lt;p&gt;Hugo has its own example site which happens to also be the documentation site
+you are reading right now.&lt;/p&gt;
+
+&lt;p&gt;Follow the following steps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Go into the repo&lt;/li&gt;
+&lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
+&lt;li&gt;Open your browser to &lt;a href=&#34;http://localhost:1313&#34;&gt;http://localhost:1313&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve gotten here, follow along the rest of this page on your local build.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-change-the-docs-site:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 3. Change the docs site&lt;/h2&gt;
+
+&lt;p&gt;Stop the Hugo process by hitting ctrl+c.&lt;/p&gt;
+
+&lt;p&gt;Now we are going to run hugo again, but this time with hugo in watch mode.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 27 ms
+&amp;gt; Web Server is available at http://localhost:1313
+&amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&amp;gt; Press ctrl+c to stop
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+&lt;code&gt;docs/content/overview/quickstart.md&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Change and save this file.. Notice what happened in your terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Change detected, rebuilding site
+
+&amp;gt; 29 pages created
+&amp;gt; 0 tags index created
+&amp;gt; in 26 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Refresh the browser and observe that the typo is now fixed.&lt;/p&gt;
+
+&lt;p&gt;Notice how quick that was. Try to refresh the site before it&amp;rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-4-have-fun:c57cc0038c788519b441e0331c8bebc7&#34;&gt;Step 4. Have fun&lt;/h2&gt;
+
+&lt;p&gt;The best way to learn something is to play with it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

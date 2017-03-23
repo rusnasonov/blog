@@ -1,11 +1,10 @@
 baseurl = "https://rusnasonov.github.io/blog/"
 languageCode = "ru,en"
 title = "rusnasonov"
-theme = "hyde"
+theme = "hugo-theme-minos"
 publishDir = "docs"
 
 [params]
-  description = " "
   #googleAnalytics="UA-73974245-1"
   #yandexMetrica=35459907
   #disqusShortname= "rusnassonov"

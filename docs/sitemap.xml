@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://rusnasonov.github.io/post/refactoring/</loc>
+    <lastmod>2016-04-21T12:39:24+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/post/design_patterns/</loc>
+    <lastmod>2016-04-11T12:57:53+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/tags/books/</loc>
+    <lastmod>2016-04-21T12:39:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/categories/books/</loc>
+    <lastmod>2016-04-21T12:39:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/post/</loc>
+    <lastmod>2016-04-21T12:39:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/</loc>
+    <lastmod>2016-04-21T12:39:24+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

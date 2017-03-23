@@ -1,12 +1,12 @@
 +++
-Categories = ["books"]
-Description = ""
-Tags = ["books"]
-authors = ["author A", "author B"]
+categories = ["books"]
+description = "Рефакторинг"
+tags = ["books"]
+authors = ["Мартин Фаулер"]
 date = "2016-04-21T12:39:24+06:00"
-draft = true
+draft = false
 menu = "books"
-title = "refactoring"
+title = "Рефакторинг"
 
 +++
 

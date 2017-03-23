@@ -1,7 +1,7 @@
 baseurl = "https://rusnasonov.github.io/"
 languageCode = "ru,en"
 title = "rusnasonov"
-theme = "mtl-pure"
+theme = "hyde"
 publishDir = "docs"
 
 [params]

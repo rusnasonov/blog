@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on rusnasonov</title>
-    <link>https://rusnasonov.github.io/tags/books/index.xml</link>
+    <link>https://rusnasonov.github.io/blog/tags/books/index.xml</link>
     <description>Recent content in Books on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
-    <atom:link href="https://rusnasonov.github.io/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rusnasonov.github.io/blog/tags/books/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Рефакторинг</title>
-      <link>https://rusnasonov.github.io/post/refactoring/</link>
+      <link>https://rusnasonov.github.io/blog/post/refactoring/</link>
       <pubDate>Thu, 21 Apr 2016 12:39:24 +0600</pubDate>
       
-      <guid>https://rusnasonov.github.io/post/refactoring/</guid>
+      <guid>https://rusnasonov.github.io/blog/post/refactoring/</guid>
       <description>
 
 &lt;p&gt;Цитаты:&lt;/p&gt;
@@ -72,10 +72,10 @@
     
     <item>
       <title>Паттерны проектирования</title>
-      <link>https://rusnasonov.github.io/post/design_patterns/</link>
+      <link>https://rusnasonov.github.io/blog/post/design_patterns/</link>
       <pubDate>Mon, 11 Apr 2016 12:57:53 +0600</pubDate>
       
-      <guid>https://rusnasonov.github.io/post/design_patterns/</guid>
+      <guid>https://rusnasonov.github.io/blog/post/design_patterns/</guid>
       <description>&lt;p&gt;Книга является вводной в паттерны проектирования программного обеспечения. В ней достаточно интересно, и просто изложен материал. Читается просто. На мой взгляд проще, чем книга &amp;ldquo;банды четырех&amp;rdquo;. Каждый паттерн разбирается на примере. Книга предназначена для новичков.&lt;/p&gt;
 </description>
     </item>

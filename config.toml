@@ -1,4 +1,4 @@
-baseurl = "https://rusnasonov.github.io/"
+baseurl = "https://rusnasonov.github.io/blog"
 languageCode = "ru,en"
 title = "rusnasonov"
 theme = "hyde"

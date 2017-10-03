@@ -3,19 +3,22 @@ languageCode = "ru,en"
 title = "rusnasonov"
 theme = "hugo-theme-minos"
 publishDir = "docs"
+sectionPagesMenu = "main"
 
-[params]
-  #googleAnalytics="UA-73974245-1"
-  #yandexMetrica=35459907
-  #disqusShortname= "rusnassonov"
+[[menu.main]]
+name = "Статьи"
+weight = 10
+identifier = "articles"
+url = "/articles/"
 
-#[[menu.main]]
-#    name = "tools"
-#    weight = 0
-#    identifier = "tools"
-#    url = "/tools/"
+[[menu.main]]
+name = "Книги"
+weight = 20
+identifier = "books"
+url = "/books/"
 
-#[[menu.main]]
-#    name = "books"
-#    weight = 0
-#    url = "/books/"
+[[menu.main]]
+name = "Шпаргалки"
+weight = 30
+identifier = "cheatsheets"
+url = "/cheatsheets/"

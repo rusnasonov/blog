@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheatsheets on rusnasonov</title>
+    <link>https://rusnasonov.github.io/blog/cheatsheet/</link>
+    <description>Recent content in Cheatsheets on rusnasonov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru,en</language>
+    <lastBuildDate>Mon, 11 Apr 2016 12:57:53 +0600</lastBuildDate>
+    
+	<atom:link href="https://rusnasonov.github.io/blog/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Паттерны проектирования</title>
+      <link>https://rusnasonov.github.io/blog/cheatsheet/python/</link>
+      <pubDate>Mon, 11 Apr 2016 12:57:53 +0600</pubDate>
+      
+      <guid>https://rusnasonov.github.io/blog/cheatsheet/python/</guid>
+      <description>Книга является вводной в паттерны проектирования программного обеспечения. В ней достаточно интересно, и просто изложен материал. Читается просто. На мой взгляд проще, чем книга &amp;ldquo;банды четырех&amp;rdquo;. Каждый паттерн разбирается на примере. Книга предназначена для новичков.</description>
+    </item>
+    
+  </channel>
+</rss>

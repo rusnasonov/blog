@@ -1,7 +1,8 @@
 ---
 date: {{dateFormat "2006-01-02" .Date}}
 title: ""
-tags: [""]
+tags: []
 categories: ["cheatsheet"]
 draft: true
+notoc: true
 ---

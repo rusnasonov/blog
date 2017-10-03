@@ -5,6 +5,9 @@ theme = "hugo-theme-minos"
 publishDir = "docs"
 sectionPagesMenu = "main"
 
+[params]
+notoc = 1
+
 [[menu.main]]
 name = "Статьи"
 weight = 10

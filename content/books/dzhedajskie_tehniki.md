@@ -1,7 +1,7 @@
 ---
 date: 2017-05-09
 title: "Джедайские техники"
-tags: [""]
+tags: []
 categories: ["books"]
 authors: ["Максим Дорофеев"]
 draft: false

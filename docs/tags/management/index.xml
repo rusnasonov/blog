@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cheatsheet on rusnasonov</title>
-    <link>https://rusnasonov.github.io/blog/categories/cheatsheet/</link>
-    <description>Recent content in Cheatsheet on rusnasonov</description>
+    <title>Management on rusnasonov</title>
+    <link>https://rusnasonov.github.io/blog/tags/management/</link>
+    <description>Recent content in Management on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rusnasonov.github.io/blog/categories/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rusnasonov.github.io/blog/tags/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>https://rusnasonov.github.io/blog/cheatsheets/management/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с
 управлением и менеджементом.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://rusnasonov.github.io/blog/cheatsheets/python/</link>
-      <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://rusnasonov.github.io/blog/cheatsheets/python/</guid>
-      <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

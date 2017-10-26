@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rusnasonov.github.io/blog/cheatsheets/management/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rusnasonov.github.io/blog/cheatsheets/python/</loc>
     <lastmod>2017-10-03T00:00:00+00:00</lastmod>
   </url>
@@ -42,13 +47,19 @@
   
   <url>
     <loc>https://rusnasonov.github.io/blog/categories/cheatsheet/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rusnasonov.github.io/blog/cheatsheets/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rusnasonov.github.io/blog/tags/management/</loc>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -60,13 +71,13 @@
   
   <url>
     <loc>https://rusnasonov.github.io/blog/tags/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rusnasonov.github.io/blog/</loc>
-    <lastmod>2017-10-03T00:00:00+00:00</lastmod>
+    <lastmod>2017-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

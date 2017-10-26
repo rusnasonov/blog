@@ -6,10 +6,22 @@
     <description>Recent content in Cheatsheets on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
-    <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rusnasonov.github.io/blog/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Управление</title>
+      <link>https://rusnasonov.github.io/blog/cheatsheets/management/</link>
+      <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.github.io/blog/cheatsheets/management/</guid>
+      <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с
+управлением и менеджементом.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Python</title>
@@ -17,7 +29,9 @@
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>https://rusnasonov.github.io/blog/cheatsheets/python/</guid>
-      <description> Статьи  Программирование метаклассов  </description>
+      <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

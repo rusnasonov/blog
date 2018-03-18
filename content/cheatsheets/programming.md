@@ -2,7 +2,6 @@
 date: 2017-11-20
 title: "Разработка"
 tags: []
-categories: ["cheatsheet"]
 draft: false
 notoc: true
 ---

@@ -2,7 +2,6 @@
 date: 2017-10-03
 title: "Python"
 tags: ["python"]
-categories: ["cheatsheet"]
 draft: false
 ---
 

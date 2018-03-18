@@ -2,7 +2,6 @@
 date: 2017-12-16
 title: "Предметно-ориентированное проектирование"
 tags: ["design"]
-categories: ["books"]
 authors: ["Эрик Эванс"]
 draft: true
 notoc: true

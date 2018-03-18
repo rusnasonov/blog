@@ -2,7 +2,6 @@
 date: 2017-08-27
 title: "Python. К вершинам мастерства."
 tags: ["python"]
-categories: ["books"]
 authors: ["Лучано Рамальо"]
 draft: true
 ---

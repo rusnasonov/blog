@@ -2,7 +2,6 @@
 date: 2016-04-21
 title: "Рефакторинг"
 tags: []
-categories: ["books"]
 authors: ["Мартин Фаулер"]
 draft: false
 notoc: true

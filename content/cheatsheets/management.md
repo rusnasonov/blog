@@ -2,7 +2,6 @@
 date: 2017-10-26
 title: "Управление"
 tags: ["management"]
-categories: ["cheatsheet"]
 draft: false
 notoc: true
 ---

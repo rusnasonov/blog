@@ -2,7 +2,6 @@
 date: 2018-02-21
 title: "Создание расширения для Visual Studio Code"
 tags: ["typescript", "vscode"]
-categories: ["articles"]
 draft: true
 notoc: true
 ---

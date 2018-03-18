@@ -1,4 +1,4 @@
-baseurl = "http://rusnasonov.com"
+baseurl = "http://rusnasonov.com/"
 languageCode = "ru,en"
 title = "rusnasonov"
 theme = "hugo-theme-minos"

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on rusnasonov</title>
-    <link>http://rusnasonov.com//categories/</link>
+    <link>http://rusnasonov.com/categories/</link>
     <description>Recent content in Categories on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Tue, 09 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rusnasonov.com//categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Books</title>
-      <link>http://rusnasonov.com//categories/books/</link>
+      <link>http://rusnasonov.com/categories/books/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//categories/books/</guid>
+      <guid>http://rusnasonov.com/categories/books/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cheatsheet</title>
-      <link>http://rusnasonov.com//categories/cheatsheet/</link>
+      <link>http://rusnasonov.com/categories/cheatsheet/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//categories/cheatsheet/</guid>
+      <guid>http://rusnasonov.com/categories/cheatsheet/</guid>
       <description></description>
     </item>
     

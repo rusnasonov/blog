@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on rusnasonov</title>
-    <link>http://rusnasonov.com//books/</link>
+    <link>http://rusnasonov.com/books/</link>
     <description>Recent content in Books on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Tue, 09 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rusnasonov.com//books/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com/books/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Джедайские техники</title>
-      <link>http://rusnasonov.com//books/dzhedajskie_tehniki/</link>
+      <link>http://rusnasonov.com/books/dzhedajskie_tehniki/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/dzhedajskie_tehniki/</guid>
+      <guid>http://rusnasonov.com/books/dzhedajskie_tehniki/</guid>
       <description>Хорошая книга, автор исследовал вопрос личной эффективности под разными углами, и объединил множество идей других исследователей. Основной посыл книги в том, что нужный инструмент необходимо подобрать под себя. Есть много полезных советов, каких трудностей стоит боятся, а каких нет.</description>
     </item>
     
     <item>
       <title>Рефакторинг</title>
-      <link>http://rusnasonov.com//books/refactoring/</link>
+      <link>http://rusnasonov.com/books/refactoring/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/refactoring/</guid>
+      <guid>http://rusnasonov.com/books/refactoring/</guid>
       <description>&lt;h3 id=&#34;цитаты&#34;&gt;Цитаты&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Паттерны проектирования</title>
-      <link>http://rusnasonov.com//books/design_patterns/</link>
+      <link>http://rusnasonov.com/books/design_patterns/</link>
       <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/design_patterns/</guid>
+      <guid>http://rusnasonov.com/books/design_patterns/</guid>
       <description>Книга является вводной в паттерны проектирования программного обеспечения. В ней достаточно интересно, и просто изложен материал. Читается просто. На мой взгляд проще, чем книга &amp;ldquo;банды четырех&amp;rdquo;. Каждый паттерн разбирается на примере. Книга предназначена для новичков.</description>
     </item>
     

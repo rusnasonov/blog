@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cheatsheets on rusnasonov</title>
-    <link>http://rusnasonov.com//cheatsheets/</link>
+    <link>http://rusnasonov.com/cheatsheets/</link>
     <description>Recent content in Cheatsheets on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Mon, 20 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rusnasonov.com//cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Разработка</title>
-      <link>http://rusnasonov.com//cheatsheets/programming/</link>
+      <link>http://rusnasonov.com/cheatsheets/programming/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/programming/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/programming/</guid>
       <description>&lt;p&gt;Заметки о разработке в целом, безотносительно языка программирования или какой-то конкретной технологии.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Управление</title>
-      <link>http://rusnasonov.com//cheatsheets/management/</link>
+      <link>http://rusnasonov.com/cheatsheets/management/</link>
       <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/management/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/management/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с
 управлением и менеджементом.&lt;/p&gt;
 
@@ -36,10 +36,10 @@
     
     <item>
       <title>Python</title>
-      <link>http://rusnasonov.com//cheatsheets/python/</link>
+      <link>http://rusnasonov.com/cheatsheets/python/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/python/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/python/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

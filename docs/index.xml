@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rusnasonov</title>
-    <link>http://rusnasonov.com//</link>
+    <link>http://rusnasonov.com/</link>
     <description>Recent content on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Mon, 20 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rusnasonov.com//index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Разработка</title>
-      <link>http://rusnasonov.com//cheatsheets/programming/</link>
+      <link>http://rusnasonov.com/cheatsheets/programming/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/programming/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/programming/</guid>
       <description>&lt;p&gt;Заметки о разработке в целом, безотносительно языка программирования или какой-то конкретной технологии.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -24,10 +24,10 @@
     
     <item>
       <title>Управление</title>
-      <link>http://rusnasonov.com//cheatsheets/management/</link>
+      <link>http://rusnasonov.com/cheatsheets/management/</link>
       <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/management/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/management/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с
 управлением и менеджементом.&lt;/p&gt;
 
@@ -36,10 +36,10 @@
     
     <item>
       <title>Python</title>
-      <link>http://rusnasonov.com//cheatsheets/python/</link>
+      <link>http://rusnasonov.com/cheatsheets/python/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//cheatsheets/python/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/python/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,19 +47,19 @@
     
     <item>
       <title>Джедайские техники</title>
-      <link>http://rusnasonov.com//books/dzhedajskie_tehniki/</link>
+      <link>http://rusnasonov.com/books/dzhedajskie_tehniki/</link>
       <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/dzhedajskie_tehniki/</guid>
+      <guid>http://rusnasonov.com/books/dzhedajskie_tehniki/</guid>
       <description>Хорошая книга, автор исследовал вопрос личной эффективности под разными углами, и объединил множество идей других исследователей. Основной посыл книги в том, что нужный инструмент необходимо подобрать под себя. Есть много полезных советов, каких трудностей стоит боятся, а каких нет.</description>
     </item>
     
     <item>
       <title>Рефакторинг</title>
-      <link>http://rusnasonov.com//books/refactoring/</link>
+      <link>http://rusnasonov.com/books/refactoring/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/refactoring/</guid>
+      <guid>http://rusnasonov.com/books/refactoring/</guid>
       <description>&lt;h3 id=&#34;цитаты&#34;&gt;Цитаты&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -76,10 +76,10 @@
     
     <item>
       <title>Паттерны проектирования</title>
-      <link>http://rusnasonov.com//books/design_patterns/</link>
+      <link>http://rusnasonov.com/books/design_patterns/</link>
       <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com//books/design_patterns/</guid>
+      <guid>http://rusnasonov.com/books/design_patterns/</guid>
       <description>Книга является вводной в паттерны проектирования программного обеспечения. В ней достаточно интересно, и просто изложен материал. Читается просто. На мой взгляд проще, чем книга &amp;ldquo;банды четырех&amp;rdquo;. Каждый паттерн разбирается на примере. Книга предназначена для новичков.</description>
     </item>
     

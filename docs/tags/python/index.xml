@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on rusnasonov</title>
-    <link>http://rusnasonov.com/tags/python/</link>
+    <link>http://rusnasonov.com//tags/python/</link>
     <description>Recent content in Python on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Tue, 03 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rusnasonov.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com//tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Python</title>
-      <link>http://rusnasonov.com/cheatsheets/python/</link>
+      <link>http://rusnasonov.com//cheatsheets/python/</link>
       <pubDate>Tue, 03 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com/cheatsheets/python/</guid>
+      <guid>http://rusnasonov.com//cheatsheets/python/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

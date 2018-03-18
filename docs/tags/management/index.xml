@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on rusnasonov</title>
-    <link>https://rusnasonov.github.io/blog/tags/management/</link>
+    <link>http://rusnasonov.com/tags/management/</link>
     <description>Recent content in Management on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
     <lastBuildDate>Thu, 26 Oct 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://rusnasonov.github.io/blog/tags/management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rusnasonov.com/tags/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Управление</title>
-      <link>https://rusnasonov.github.io/blog/cheatsheets/management/</link>
+      <link>http://rusnasonov.com/cheatsheets/management/</link>
       <pubDate>Thu, 26 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://rusnasonov.github.io/blog/cheatsheets/management/</guid>
+      <guid>http://rusnasonov.com/cheatsheets/management/</guid>
       <description>&lt;p&gt;Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с
 управлением и менеджементом.&lt;/p&gt;
 

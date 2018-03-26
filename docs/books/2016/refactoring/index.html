@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Python // rusnasonov</title>
+    <title>Рефакторинг // rusnasonov</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Python" />
+        <meta property="og:title" content="Рефакторинг" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="http://rusnasonov.com/cheatsheets/python/" />
+    <meta property="og:url" content="http://rusnasonov.com/books/2016/refactoring/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="rusnasonov" />
@@ -85,77 +85,100 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Python</h1>
+            <h1 class="article-title" itemprop="name">Рефакторинг</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/cheatsheets/python/" class="article-date">
-                <time datetime='2017-10-03T00:00:00.000&#43;00:00' itemprop="datePublished">2017-10-03</time>
+            <a href="/books/2016/refactoring/" class="article-date">
+                <time datetime='2016-04-21T00:00:00.000&#43;00:00' itemprop="datePublished">2016-04-21</time>
             </a>
             
             
             
         </div>
         <div class="article-entry" itemprop="articleBody">
-            <p>Тут собраны различные полезные материалы (книги, статьи, библиотеки), так или иначе связанные с языком программирования Python.</p>
+            <h3 id="цитаты">Цитаты</h3>
+
+<ul>
+<li>Это напоминает мне высказывание Кента Бека, которое он часто повторяет: «Я не считаю себя
+замечательным программистом. Я просто хороший программист с замечательными привычками». Рефакторинг
+очень помогает мне писать надежный код.</li>
+<li>Делая что-то в первый раз, вы просто
+это делаете. Делая что-то аналогичное во второй раз, вы морщитесь от необходимости повторения, но все-таки
+повторяете то же самое. Делая что-то похожее в третий раз, вы начинаете рефакторинг.</li>
+</ul>
 
 <p></p>
 
-<h1 id="статьи">Статьи</h1>
+<p>Основные моменты:</p>
 
 <ul>
-<li><a href="https://www.ibm.com/developerworks/ru/library/l-pymeta2/">Программирование метаклассов</a></li>
-<li><a href="http://asvetlov.blogspot.ru/2011/02/date-and-time.html">Дата и время</a></li>
+<li>Рефакторинг помогает найти ошибки</li>
+<li>Рефакторинг позволяет быстрее писать программы</li>
+<li>Применяйте рефакторинг при добавлении новой функции</li>
+<li>Применяйте рефакторинг, если требуется исправить ошибку</li>
+<li>Применяйте рефакторинг при разборе кода</li>
 </ul>
 
-<h1 id="блоги">Блоги</h1>
+<h3 id="правила">Правила</h3>
+
+<p>После трех ударов начинайте рефакторинг</p>
+
+<p>Из за чего бывает сложно работать с программами?
+В данный момент мне приходят в голову четыре причины:</p>
+
+<ol>
+<li>Программы трудные для чтенияб трудно модифицироватью</li>
+<li>Программы в логике которых есть дублированиеб трудно модифицироватью</li>
+<li>Программы которым нужны дополнительные функцииб что требует изменений в работающем кодеб
+трудно модифицироватью</li>
+<li>Программы реализующие сложную логику условных операторовб трудно модифицироватью</li>
+</ol>
+
+<h3 id="код-с-душком">Код с душком</h3>
 
 <ul>
-<li><a href="http://asvetlov.blogspot.ru">Андрей Светлов</a></li>
+<li>Дублирование кода</li>
+<li>Длинный метод</li>
+<li>Большой класс</li>
+<li>Длинный список параметров</li>
+<li>Расходящиеся модификации</li>
+<li>Стрельба дробью</li>
+<li>Завистливые функции</li>
+<li>Группы данных</li>
+<li>Одержимость элементарными типами</li>
+<li>Операторы типа switch</li>
+<li>Параллельные иерархии наследования</li>
+<li>Ленивый класс</li>
+<li>Временное поле</li>
+<li>Цепочки сообщений</li>
+<li>Посредник</li>
+<li>Неуместная близость</li>
+<li>Альтернативные классы с разными интерфейсами</li>
+<li>Классы данных</li>
 </ul>
+
+<p>Пишите тесты! без них нельзя делать рефакторинг!</p>
         </div>
 
         
-        
-        <div class="article-toc" >
-            <h3>Contents</h3>
-            <nav id="TableOfContents">
-<ul>
-<li><a href="#статьи">Статьи</a></li>
-<li><a href="#блоги">Блоги</a></li>
-</ul>
-</nav>
-        </div>
-        
-        
 
         
 
 
-        
-        <footer class="article-footer">
-            <ul class="article-tag-list">
-                
-                <li class="article-tag-list-item">
-                    <a class="article-tag-list-link" href="http://rusnasonov.com//tags/python">python
-                    </a>
-                </li>
-                
-            </ul>
-        </footer>
         
     </div>
     <nav id="article-nav">
     
-    <a href="/cheatsheets/management/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/books/2017/dzhedajskie_tehniki/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Управление
+            Джедайские техники
         </div>
     </a>
     
     
-    <a href="/books/2017/dzhedajskie_tehniki/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Джедайские техники&nbsp;<span>&gt;</span></div>
+    <a href="/books/2016/design_patterns/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Паттерны проектирования&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>

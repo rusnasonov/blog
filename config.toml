@@ -1,27 +1,11 @@
 baseurl = "http://rusnasonov.com/"
 languageCode = "ru,en"
 title = "rusnasonov"
-theme = "hugo-theme-minos"
+theme = "hugo-rusnasonov-theme"
 publishDir = "docs"
 sectionPagesMenu = "main"
 
 [params]
 notoc = 1
+avatar = "/images/avatar.jpg"
 
-[[menu.main]]
-name = "Статьи"
-weight = 10
-identifier = "articles"
-url = "/articles/"
-
-[[menu.main]]
-name = "Книги"
-weight = 20
-identifier = "books"
-url = "/books/"
-
-[[menu.main]]
-name = "Шпаргалки"
-weight = 30
-identifier = "cheatsheets"
-url = "/cheatsheets/"

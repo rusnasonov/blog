@@ -6,47 +6,22 @@
     <description>Recent content in Books on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
-    <lastBuildDate>Tue, 09 May 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rusnasonov.com/books/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Джедайские техники</title>
-      <link>http://rusnasonov.com/books/dzhedajskie_tehniki/</link>
-      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      <title>Разбогатей! Книга для тех, кто отважился заработать много денег и купить себе Феррари или Ламборгини</title>
+      <link>http://rusnasonov.com/books/2018/millionaire_fastlane/</link>
+      <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rusnasonov.com/books/dzhedajskie_tehniki/</guid>
-      <description>Хорошая книга, автор исследовал вопрос личной эффективности под разными углами, и объединил множество идей других исследователей. Основной посыл книги в том, что нужный инструмент необходимо подобрать под себя. Есть много полезных советов, каких трудностей стоит боятся, а каких нет.</description>
-    </item>
-    
-    <item>
-      <title>Рефакторинг</title>
-      <link>http://rusnasonov.com/books/refactoring/</link>
-      <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rusnasonov.com/books/refactoring/</guid>
-      <description>&lt;h3 id=&#34;цитаты&#34;&gt;Цитаты&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Это напоминает мне высказывание Кента Бека, которое он часто повторяет: «Я не считаю себя
-замечательным программистом. Я просто хороший программист с замечательными привычками». Рефакторинг
-очень помогает мне писать надежный код.&lt;/li&gt;
-&lt;li&gt;Делая что-то в первый раз, вы просто
-это делаете. Делая что-то аналогичное во второй раз, вы морщитесь от необходимости повторения, но все-таки
-повторяете то же самое. Делая что-то похожее в третий раз, вы начинаете рефакторинг.&lt;/li&gt;
-&lt;/ul&gt;
+      <guid>http://rusnasonov.com/books/2018/millionaire_fastlane/</guid>
+      <description>&lt;p&gt;Название книги книги выглядит вызывающе, и попахивает желтизной. На самом деле все, о чем написано в книге, применимо в жизни.
+Основная мысль, которая проходит через всю книгу, что наша жизнь - это дорога. По этой дороге можно двигаться по обочине, в крайней правой полосе, и по полосе обгона.
+Обочина для людей, которые живут одним днем. Крайняя правая полоса для тех, кто жертвует сегодняшним днем в надежде на светлое будущее - вот только это светлое будущее наступит в лучшем случае в старости. Полоса обгона для тех, кто хочет насладиться жизнью будучи молодым и здоровым.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Паттерны проектирования</title>
-      <link>http://rusnasonov.com/books/design_patterns/</link>
-      <pubDate>Mon, 11 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://rusnasonov.com/books/design_patterns/</guid>
-      <description>Книга является вводной в паттерны проектирования программного обеспечения. В ней достаточно интересно, и просто изложен материал. Читается просто. На мой взгляд проще, чем книга &amp;ldquo;банды четырех&amp;rdquo;. Каждый паттерн разбирается на примере. Книга предназначена для новичков.</description>
     </item>
     
   </channel>

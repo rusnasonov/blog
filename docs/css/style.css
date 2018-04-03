@@ -244,3 +244,15 @@ footer a, footer p {
 }
 
 /* ====== */
+
+/* === 404 page === */
+#not-found-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#not-found-page  a{
+    text-decoration: underline;
+}
+/* ====== */

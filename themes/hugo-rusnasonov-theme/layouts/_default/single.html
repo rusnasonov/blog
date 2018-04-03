@@ -1,7 +1,11 @@
 {{ define "main" }}
+    <section class="article-item">
+        {{ partial "article/article-title.html" . }}
+        {{ partial "article/article-meta.html" . }}
+        {{ partial "article/article-content.html" . }}
+    </section>        
+{{ end }}
 
-{{ partial "article/article-title.html" . }}
-{{ partial "article/article-meta.html" . }}
-{{ partial "article/article-content.html" . }}
-
+{{ define "title" }}
+    {{ .Title }}
 {{ end }}

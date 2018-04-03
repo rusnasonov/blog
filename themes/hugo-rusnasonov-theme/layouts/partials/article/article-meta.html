@@ -1,4 +1,4 @@
-<div class="article-meta text-field">
+<div class="article-meta">
     <ul class="article-meta-subline">
         <li>
             <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
@@ -8,7 +8,7 @@
         </li>
         <li>
             {{ range .Params.tags }}
-            <a class="article-tag-list-link" href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}">{{ . }}</a>
+                <a class="article-tag-list-link" href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}">#{{ . }}</a>
             {{ end }}
         </li>
         {{ $Site := .Site }} {{ if .Site.Params.disqusShortname }}

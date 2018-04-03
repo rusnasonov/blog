@@ -1,29 +1,246 @@
-.text-field {
-    font-size: 100%;
+/* === reset === */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* ======= */
+
+/* === common === */
+
+p, a, li {
+    font-size: 19px;
     font-family: 'PT Serif', serif;
+    word-break: break-word;
+    line-height: 26px;
 }
 
-#header {
+a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+}
+
+a:hover {
+    border-bottom-color: #000;
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 38px;
+}
+
+header {
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#main {
+main {
     grid-area: main;
 }
 
-#footer {
+footer {
     grid-area: footer;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto minmax(auto, 700px) auto;
-    grid-template-rows:  auto auto 40px;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 10px;
-    grid-template-areas:
-        ". header ."
-        ". main ."
-        ". footer ."
+
+
+
+@media (min-width: 700px) {
+    body {
+        display: grid;
+        grid-template-columns: auto minmax(auto, 700px) auto;
+        grid-template-rows:  auto auto 40px;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+        grid-template-areas:
+            ". header ."
+            ". main ."
+            ". footer ."
+    }
 }
+
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ====== */
+
+
+/* === article === */
+.article-image {
+    display: flex;
+    justify-content: center;
+}
+
+.article-item {
+    margin-top: 38px;
+    margin-bottom: 76px;
+    padding: 10px;
+}
+
+.article-continue-link {
+    margin-top: 19px;
+}
+.article-continue-link a {
+    border-bottom: 1px solid #000;
+}
+
+.article-content img {
+    max-width:100%;
+}
+
+.article-content ul {
+    margin: 0 20px;
+    line-height: 1.4em;
+    list-style: disc;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+    padding: 0 10px;
+}
+.article-content p {
+    line-height: 1.4em;
+    margin: 1.4em 0;
+}
+.article-content a {
+    border-bottom: 1px dotted #000;
+}
+.article-content blockquote {
+    background: none repeat scroll 0 0 #eeeeee;
+    border-left: 5px solid #b4b4b4;
+    border-right: 5px solid #b4b4b4;
+    color: #333333;
+    font-style: italic;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 30px;
+    box-shadow: 0 0 5px #c0c0c0;
+}
+
+.article-meta {
+    margin-bottom: 16px;
+}
+.article-meta p, .article-meta a, .article-meta li {
+  color: #939393;
+  font-size: 16px;
+}
+.article-meta ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.article-meta-subline > li {
+    display: inline;
+    margin-right: 9px;
+}
+
+.article-title {
+    margin-bottom: 9px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+.article-title a {
+    font-size: 38px;
+    line-height: 38px;
+}
+
+/* ====== */
+
+
+
+
+
+/* === header === */
+#header-title {
+    width: auto;
+    color: #000;
+    font-size: 24px;
+}
+
+#header-avatar img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+#header-avatar {
+    border: none;
+}
+
+/* ====== */
+
+/* === pagination === */
+.pagination {
+    display: flex;
+    justify-content: space-around;
+}
+/* ====== */
+
+/* === footer === */
+footer a, footer p {
+    font-size: 15px;
+}
+
+/* ====== */

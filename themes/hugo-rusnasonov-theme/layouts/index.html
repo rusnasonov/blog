@@ -1,18 +1,17 @@
 {{ define "main" }}
 
 {{ range .Paginator.Pages }}
-    {{ partial "article/article-title.html" . }}
-    {{ partial "article/article-meta.html" . }}
-    <div>
-        <p>
-            {{ .Summary }}
-        </p>
-        <p>
-            <a href="{{ .RelPermalink }}">continue...</a>
-        </p>
-    </div>
+    <section class="article-item">
+        {{ partial "article/article-title.html" . }}
+        {{ partial "article/article-meta.html" . }}
+        {{ partial "article/article-summary.html" . }}
+    </section>
 {{ end }}
 
 {{ partial "pagination.html" . }}
 
+{{ end }}
+
+{{ define "title" }}
+    {{ .Site.Title }}
 {{ end }}

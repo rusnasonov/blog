@@ -6,3 +6,11 @@ authors: ["author"]
 draft: true
 notoc: true
 ---
+
+<!-- more -->
+
+{{< postimage "image.jpg" >}}
+
+---
+
+[ЛитРес](https://link)

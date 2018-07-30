@@ -6,10 +6,21 @@
     <description>Recent content in Books on rusnasonov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru,en</language>
-    <lastBuildDate>Thu, 22 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rusnasonov.com/books/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Статистика и котики</title>
+      <link>http://rusnasonov.com/books/2018/statistica_i_kotiki/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rusnasonov.com/books/2018/statistica_i_kotiki/</guid>
+      <description>Увидел что данную книгу рекламирует Максим Дорофеев в&amp;nbsp;своем ЖЖ. Со&amp;nbsp;статистикой я&amp;nbsp;сталкивался в&amp;nbsp;рамках университетских курсов, там некоторые вещи объясняли довольно глубоко.
+Книга нацелена на&amp;nbsp;новичков в&amp;nbsp;статистике, рассказывает о&amp;nbsp;различных базовых понятиях (выборка, мода, медиана, мат.ожидание, дисперсия) простым языком. Решил освежить в&amp;nbsp;памяти, и&amp;nbsp;возможно что-то переосмыслить. Книга небольшая, и&amp;nbsp;без тяжелых формул, поэтому читается легко и&amp;nbsp;быстро.
+Содержание можно разделить на&amp;nbsp;две части. Первая часть базовая, рассказывать что такое выборка, репрезентативная выборка, медиана, мат. ожидание, дисперсия, квантиль. Вторая часть рассказывать о&amp;nbsp;способе анализа выборок&amp;nbsp;&amp;mdash; о&amp;nbsp;различных критериях, как и&amp;nbsp;в&amp;nbsp;каких случаях их&amp;nbsp;применять, какие у&amp;nbsp;каждого есть нюансы.</description>
+    </item>
     
     <item>
       <title>Разбогатей! Книга для тех, кто отважился заработать много денег и купить себе Феррари или Ламборгини</title>

@@ -9,7 +9,7 @@ notoc: true
 
 <!-- more -->
 
-{{< postimage "image.jpg" >}}
+{{< postimage >}}
 
 ---
 

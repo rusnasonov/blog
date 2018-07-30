@@ -13,7 +13,7 @@ raiting: 5
 
 <!--more-->
 
-{{< postimage "millionaire_fastlane.jpg" >}}
+{{< postimage >}}
 
 
 В целом книга мне очень понравилась - написано просто и интересно. Можно сказать она открыла мне глаза на достаточно очевидные вещи - что такое богатство, как стать богатым, что нужно делать чтобы никогда не стать богатым, как стать богатым не к приходу старости. Мне понравилось как автор дал определение богатству:
@@ -60,8 +60,6 @@ raiting: 5
 Я однозначно рекомендую прочитать данную книгу, если вы чувствуете, что живете не так, как хотите. 
 
 ---
-
-Где купить:
 
 * [ЛитРес](https://www.litres.ru/em-dzhey-demarko/razbogatey-kniga-dlya-teh-kto-otvazhilsya-zarabotat-mnogo-deneg-i-kupit-sebe-ferrari-ili-lamborgini/?action=do_user_ref_discount&lfrom=363932391&ref_key=7f5b12f362af401d4fdeecc06938ad91ec260646544073a7e6c52d2b2c20e0c0)
 * [Amazon](http://a.co/cvokF5f)

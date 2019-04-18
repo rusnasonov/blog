@@ -5,7 +5,7 @@ tags: ["vscode"]
 draft: false
 ---
 
-В VSCode есть довольно много крутых расширений, и одно из них это Github Pull Request.
+В VSCode есть довольно много крутых расширений, и одно из них это [Github Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
 {{< postimage >}}
 

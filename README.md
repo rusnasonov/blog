@@ -1,4 +1,3 @@
-blog
-====
+# blog
 
-this blog build with Hugo and hosting on [GitHub Pages](http://gohugo.io/tutorials/github-pages-blog) 
+My notes and thinks: https://rusnasonov.com

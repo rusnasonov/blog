@@ -3,17 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rusnasonov.com/categories/</loc>
-    <priority>0</priority>
+    <loc>http://rusnasonov.com/vscode-github-pull-request/</loc>
+    <lastmod>2019-04-18T16:23:45+07:00</lastmod>
   </url>
   
   <url>
     <loc>http://rusnasonov.com/tags/</loc>
+    <lastmod>2019-04-18T16:23:45+07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rusnasonov.com/</loc>
+    <lastmod>2019-04-18T16:23:45+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rusnasonov.com/tags/vscode/</loc>
+    <lastmod>2019-04-18T16:23:45+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rusnasonov.com/categories/</loc>
     <priority>0</priority>
   </url>
   

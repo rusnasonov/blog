@@ -1,8 +1,6 @@
 <div>
-    <div class="article-content">
-        {{ .Summary }}
-    </div>
-    <p class="article-continue-link">
-        <a href="{{ .RelPermalink }}">continue...</a>
-    </p>
+        <section class="pa2 pa2-ns f4 lh-copy">
+                {{ .Summary }}
+        </section>
+        <a class="f4" href="{{ .RelPermalink }}">continue...</a>
 </div>

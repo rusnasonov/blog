@@ -1,22 +1,20 @@
-<div class="article-meta">
-    <ul class="article-meta-subline">
-        <li>
+<section>
+    <ul class="list flex gray pl0 ml0">
+        <li class="ph1">
             <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
         </li>
-        <li>
+        <li class="ph1">
             {{ .WordCount }} words
         </li>
-        <li>
+        <li class="ph1">
             {{ range .Params.tags }}
-                <a class="article-tag-list-link" href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}">#{{ . }}</a>
+                <a href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}" class="no-underline underline-hover gray">#{{ . }}</a>
             {{ end }}
         </li>
         {{ $Site := .Site }} {{ if .Site.Params.disqusShortname }}
-            <li>
-                <div class="article-comment-link-wrap">
-                    <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comments</a>
-                </div>
+            <li class="ph1">
+                <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comments</a>
             </li>
         {{ end }}
     </ul>
-</div>
+</section>

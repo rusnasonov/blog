@@ -9,6 +9,8 @@
     <meta name="keywords" content="{{ range .Site.Params.Keywords }}{{ . }},{{ end }}">
     <meta name="author" content="{{ .Site.Params.Author }}">
     
+    <meta name="yandex-verification" content="920f76515b387fe6" />
+    
     <meta property="og:title" content="{{ if .Params.ogtitle }}{{ .Params.ogtitle }}{{ else }}{{ .Title }}{{ end }}" />
     <meta property="og:description" content="{{ if .Params.ogdescription }}{{ .Params.ogdescription }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta property="og:type" content="website" />
@@ -27,7 +29,6 @@
 
     <link rel="stylesheet" href="/css/tachyons.min.css">
     <link rel="stylesheet" href="/css/style.css">
-
     <link href="http://gmpg.org/xfn/11" rel="profile">
 
     {{ .Hugo.Generator }}

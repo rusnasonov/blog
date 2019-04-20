@@ -11,10 +11,8 @@
                 <a href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}" class="no-underline underline-hover gray">#{{ . }}</a>
             {{ end }}
         </li>
-        {{ $Site := .Site }} {{ if .Site.Params.disqusShortname }}
-            <li class="ph1">
-                <a href="{{ .RelPermalink }}#disqus_thread" class="article-comment-link">Comments</a>
-            </li>
-        {{ end }}
+        <li class="ph1">
+            <span class="remark42__counter" data-url="{{ .RelPermalink }}"></span>
+        </li>
     </ul>
 </section>

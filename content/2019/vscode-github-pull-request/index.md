@@ -1,5 +1,7 @@
 ---
 title: "Github Pull Request в VSCode"
+description: "Github Pull Request — расширение для VSCode, которое упрощает работу с пул-реквестами"
+keywords: ["vscode", "github", "vscode extension", "tools", "github pull request"]
 date: 2019-04-18T16:23:45+07:00
 tags: ["vscode"]
 draft: false

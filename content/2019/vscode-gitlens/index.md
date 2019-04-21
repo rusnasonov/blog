@@ -1,10 +1,11 @@
 ---
 date: 2019-04-21
 title: "Gitlens — просмотр git'a под всеми углами"
+description: "GitLens — классное расширение для VSCode, помогает просматривать историю и репозиторий."
+keywords: ["vscode", "github", "vscode extension", "tools", "gitlens"]
 tags: ["vscode"]
 draft: false
 notoc: true
-resources:
 ---
 
 Продолжая тему крутых расширений, нельзя не упомянуть о [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens).

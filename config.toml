@@ -7,6 +7,8 @@ sectionPagesMenu = "main"
 
 [params]
 notoc = 1
+description = "Blog about IT | Блог об IT"
+author = "Ruslan Nasonov"
 avatar = "/images/avatar.jpg"
 yandexMetrica = 46434456
-
+keywords = ["программирование", "vscode", "блог", "it"]

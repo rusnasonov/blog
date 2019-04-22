@@ -11,9 +11,11 @@
     
     <meta name="yandex-verification" content="920f76515b387fe6" />
     
-    <meta property="og:title" content="{{ if .Params.ogtitle }}{{ .Params.ogtitle }}{{ else }}{{ .Title }}{{ end }}" />
+    <meta property="article:published_time" content={{ .Date.Format "2006-01-02 15:04:05.000" }} />
+    <meta property="site_name" content="{{ .Site.Params.Author }}">
+    <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:description" content="{{ if .Params.ogdescription }}{{ .Params.ogdescription }}{{ else }}{{ .Description | default .Site.Params.Description }}{{ end }}" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="article" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:url" content="{{ .Permalink }}" />
     {{ if .Params.ogimage }}

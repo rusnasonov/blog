@@ -1,6 +1,6 @@
 baseurl = "http://rusnasonov.com/"
 languageCode = "ru,en"
-title = "rusnasonov"
+title = "Ruslan Nasonov"
 theme = "hugo-rusnasonov-theme"
 publishDir = "docs"
 sectionPagesMenu = "main"
@@ -10,7 +10,7 @@ enableRobotsTXT = true
 notoc = 1
 description = "Блог об IT"
 keywords = ["программирование", "блог", "it", "ит", "блог о программировании"]
-author = "Руслан Насонов"
+author = "Ruslan Nasonov"
 avatar = "/images/avatar.jpg"
 yandexMetrica = 46434456
 

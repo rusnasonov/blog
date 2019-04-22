@@ -5,6 +5,7 @@ keywords: ["vscode", "github", "vscode extension", "tools", "github pull request
 date: 2019-04-18T16:23:45+07:00
 tags: ["vscode"]
 draft: false
+ogimage: "https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.png"
 ---
 
 В VSCode есть довольно много крутых расширений, и одно из них это [Github Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).

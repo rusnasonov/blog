@@ -6,6 +6,7 @@ keywords: ["vscode", "github", "vscode extension", "tools", "gitlens"]
 tags: ["vscode"]
 draft: false
 notoc: true
+ogimage: "https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png"
 ---
 
 Продолжая тему крутых расширений, нельзя не упомянуть о [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens).

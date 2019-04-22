@@ -4,6 +4,7 @@ title = "rusnasonov"
 theme = "hugo-rusnasonov-theme"
 publishDir = "docs"
 sectionPagesMenu = "main"
+enableRobotsTXT = true
 
 [params]
 notoc = 1

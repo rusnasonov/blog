@@ -9,7 +9,7 @@ draft: false
 
 В VSCode есть довольно много крутых расширений, и одно из них это [Github Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
-[GitHub Pull Request](https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.png)
+![GitHub Pull Request](https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.png)
 
 <!--more-->
 

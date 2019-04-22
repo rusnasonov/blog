@@ -19,11 +19,7 @@
       <guid>http://rusnasonov.com/2019/vscode-gitlens/</guid>
       <description>&lt;p&gt;Продолжая тему крутых расширений, нельзя не упомянуть о &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens&#34;&gt;GitLens&lt;/a&gt;.&lt;/p&gt;
 
-
-&lt;figure&gt;
-	&lt;img src=&#34;http://rusnasonov.com/2019/vscode-gitlens/image.png&#34; alt=&#34;&#34; /&gt;
-	&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png&#34; alt=&#34;GitLens&#34; /&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,11 +30,7 @@
       <guid>http://rusnasonov.com/2019/vscode-github-pull-request/</guid>
       <description>&lt;p&gt;В VSCode есть довольно много крутых расширений, и одно из них это &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github&#34;&gt;Github Pull Request&lt;/a&gt;.&lt;/p&gt;
 
-
-&lt;figure&gt;
-	&lt;img src=&#34;http://rusnasonov.com/2019/vscode-github-pull-request/image.jpg&#34; alt=&#34;&#34; /&gt;
-	&lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.png&#34;&gt;GitHub Pull Request&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -9,7 +9,7 @@ draft: false
 
 В VSCode есть довольно много крутых расширений, и одно из них это [Github Pull Request](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
 
-{{< img "image.jpg" "">}}
+[GitHub Pull Request](https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.png)
 
 <!--more-->
 
@@ -22,5 +22,7 @@ draft: false
 5. Подтвержать и мержить pr.
 6. Указывать теги и ревьюеров.
 7. Работать с GitHub Enterprise.
+
+{{< img "image.jpg" "">}}
 
 Для сравнения, в [IDE от JetBrains](https://blog.jetbrains.com/idea/2018/10/intellij-idea-2018-3-eap-github-pull-requests-and-more) тоже есть возможность работать с pr, но функциональность сильно скуднее - нельзя комментировать, смотреть комментарии, подтвержать и мержить, неудобная фильтрация.

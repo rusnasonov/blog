@@ -11,7 +11,7 @@ notoc: true
 Продолжая тему крутых расширений, нельзя не упомянуть о [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens).
 
 
-{{< img "image.png" "">}}
+![GitLens](https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png)
 
 <!--more-->
 
@@ -25,6 +25,8 @@ notoc: true
 * Отображение истории строки, файла.
 * Подсветка измененных строк одного коммита.
 * Просмотр изменений в коммите.
+
+{{< img "image.png" "">}}
 
 ### Просмотр информации о репозитории
 

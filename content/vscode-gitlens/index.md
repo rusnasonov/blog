@@ -11,10 +11,9 @@ ogimage: "https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images
 
 Продолжая тему крутых расширений, нельзя не упомянуть о [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens).
 
+<!--more-->
 
 ![GitLens](https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png)
-
-<!--more-->
 
 Если в качестве системы контроля версий вы используете git, то это расширение обязательно к установке! Функционально, его можно разделить на 2 части.
 

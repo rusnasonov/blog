@@ -5,26 +5,28 @@
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta name="description" content="Блог об IT">
-    <meta name="keywords" content="программирование,блог,it,ит,блог о программировании,">
+    <meta name="description" content="GitLens — классное расширение для VSCode, помогает просматривать историю и репозиторий.">
+    <meta name="keywords" content="vscode,github,vscode extension,tools,gitlens,">
     <meta name="author" content="Ruslan Nasonov">
     
     <meta name="yandex-verification" content="920f76515b387fe6" />
     
-    <meta property="article:published_time" content=2019-05-27&#32;00:00:00.000 />
+    <meta property="article:published_time" content=2019-04-21&#32;00:00:00.000 />
     <meta property="site_name" content="Ruslan Nasonov">
-    <meta property="og:title" content="Ruslan Nasonov" />
-    <meta property="og:description" content="Блог об IT" />
+    <meta property="og:title" content="Gitlens — просмотр git&#39;a под всеми углами" />
+    <meta property="og:description" content="GitLens — классное расширение для VSCode, помогает просматривать историю и репозиторий." />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="ru_RU" />
-    <meta property="og:url" content="http://rusnasonov.com/" />
+    <meta property="og:url" content="http://rusnasonov.com/vscode-gitlens/" />
+    
+    <meta property="og:image" content="https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png" />
     
 
     <title>
-    Ruslan Nasonov
+    Gitlens — просмотр git&#39;a под всеми углами
 </title>
 
-    <link href="http://rusnasonov.com/index.xml" rel="alternate" type="application/rss+xml" title="Ruslan Nasonov" />
+    <link href="" rel="alternate" type="application/rss+xml" title="Ruslan Nasonov" />
     <link rel="shortcut icon" href="/favicon.png">
 
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
@@ -66,44 +68,6 @@
     </header>
     <main class="mw7 flex-auto pa2">
         
-
-
-    <article>
-        <header>
-            <h1>
-    <a href="/ritfest2019/" class="f3-m f2-l black link hover-blue">РИТ&#43;&#43; 2019 </a>
-</h1>
-            <section>
-    <ul class="list flex gray pl0 ml0">
-        <li class="ph1">
-            <time datetime='2019-05-27T00:00:00.000&#43;00:00' itemprop="datePublished">2019-05-27</time>
-        </li>
-        <li class="ph1">
-            1655 words
-        </li>
-        <li class="ph1">
-            
-                <a href="http://rusnasonov.com/tags/conference" class="no-underline underline-hover gray">#conference</a>
-            
-        </li>
-        <li class="ph1">
-            <i class="far fa-comment fa-lg"></i>
-            <span class="remark42__counter" data-url="/ritfest2019/"></span>
-            comments
-        </li>
-    </ul>
-</section>
-        </header>
-        <section>
-            <div>
-        <section class="pa2 pa2-ns f4 lh-copy">
-                <p><a href="https://ritfest.ru">РИТ</a> - Российские Интернет Технологии. Большая конференция по различным направлениям. 6 потоков — бекенд, фронтенд, devops, qa, менджмент, психология в бизнесе. Проводилась в Сколково. Если хочется получить знания в ширь а не в глубь, вам сюда.</p>
-        </section>
-        <a class="f4" href="/ritfest2019/">continue...</a>
-</div>
-        </section>
-    </article>
-
     <article>
         <header>
             <h1>
@@ -131,56 +95,51 @@
 </section>
         </header>
         <section>
-            <div>
-        <section class="pa2 pa2-ns f4 lh-copy">
-                <p>Продолжая тему крутых расширений, нельзя не упомянуть о <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>.</p>
-        </section>
-        <a class="f4" href="/vscode-gitlens/">continue...</a>
-</div>
-        </section>
-    </article>
+            <section class="pa2 pa2-ns f4 lh-copy">
+        <p>Продолжая тему крутых расширений, нельзя не упомянуть о <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a>.</p>
 
-    <article>
-        <header>
-            <h1>
-    <a href="/vscode-github-pull-request/" class="f3-m f2-l black link hover-blue">Github Pull Request в VSCode </a>
-</h1>
-            <section>
-    <ul class="list flex gray pl0 ml0">
-        <li class="ph1">
-            <time datetime='2019-04-18T16:23:45.000&#43;07:00' itemprop="datePublished">2019-04-18</time>
-        </li>
-        <li class="ph1">
-            102 words
-        </li>
-        <li class="ph1">
-            
-                <a href="http://rusnasonov.com/tags/vscode" class="no-underline underline-hover gray">#vscode</a>
-            
-        </li>
-        <li class="ph1">
-            <i class="far fa-comment fa-lg"></i>
-            <span class="remark42__counter" data-url="/vscode-github-pull-request/"></span>
-            comments
-        </li>
-    </ul>
+<p><img src="https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images/docs/gitlens-logo.png" alt="GitLens" /></p>
+
+<p>Если в качестве системы контроля версий вы используете git, то это расширение обязательно к установке! Функционально, его можно разделить на 2 части.</p>
+
+<h3 id="работа-с-историей">Работа с историей</h3>
+
+<ul>
+<li>Подсветка строки - кто менял и когда.</li>
+<li>Всплывающее окно с информацией о коммите — сообщение, автор, хеш коммита, все кликабельно!</li>
+<li>Отображение всех авторов файла, дату и коммит последнего изменения.</li>
+<li>Отображение истории строки, файла.</li>
+<li>Подсветка измененных строк одного коммита.</li>
+<li>Просмотр изменений в коммите.</li>
+</ul>
+
+
+<figure>
+	<img src="/vscode-gitlens/image.png" alt="" />
+	<figcaption></figcaption>
+</figure>
+
+<h3 id="просмотр-информации-о-репозитории">Просмотр информации о репозитории</h3>
+
+<ul>
+<li>Просмотр локальных и удаленных веток.</li>
+<li>Просмотр тегов.</li>
+<li>Просмотр стэша.</li>
+<li>Просмотр коммитов в разрезе веток, контрибьюторов, тегов.</li>
+<li>Поиск коммитов по автору, файлу, сообщению, хешу.</li>
+</ul>
+
+
+<figure>
+	<img src="/vscode-gitlens/image1.png" alt="" />
+	<figcaption></figcaption>
+</figure>
+
+<p>Расширение очень годное, рекомендую к использованию!</p>
 </section>
-        </header>
-        <section>
-            <div>
-        <section class="pa2 pa2-ns f4 lh-copy">
-                <p>В VSCode есть довольно много крутых расширений, и одно из них это <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">Github Pull Request</a>.</p>
         </section>
-        <a class="f4" href="/vscode-github-pull-request/">continue...</a>
-</div>
-        </section>
-    </article>
-
-
-
-
-
-
+        <div id="remark42"></div>
+    </article>        
 
     </main>
     <footer>

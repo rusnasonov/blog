@@ -1,9 +1,11 @@
 {{ define "main" }}
 
-<div id="not-found-page">
-    <h1>Page not found</h1>
-    <a href="{{ .Site.BaseURL }}"> &lt; home &gt; </a>
-</div>
+<article class="pa2 pa2-ns f4 lh-copy tc">
+    <header><h1>Page not found</h1></header>
+    <section>
+            <p>The page you requested could not be found. Try to start reading my blog from <a href="{{ .Site.BaseURL }}">Home</a></p>
+    </section>
+</article>
 
 {{ end }}
 

@@ -11,8 +11,8 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@master
-    - name: workaround for checkout, switch to branch
-      run: git checkout master
+      with:
+        ref: master
     - name: build
       uses: github-actions-x/hugo@master
     - name: push

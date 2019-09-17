@@ -1,9 +1,9 @@
 <section>
     <ul class="list flex gray pl0 ml0">
-        <li class="ph1">
+        <li class="ph1 nowrap">
             <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
         </li>
-        <li class="ph1">
+        <li class="ph1 nowrap">
             {{ .WordCount }} words
         </li>
         <li class="ph1">
@@ -11,7 +11,7 @@
                 <a href="{{ $.Site.BaseURL}}tags/{{ . | urlize }}" class="no-underline underline-hover gray">#{{ . }}</a>
             {{ end }}
         </li>
-        <li class="ph1">
+        <li class="ph1 nowrap">
             <i class="far fa-comment fa-lg"></i>
             <span class="remark42__counter" data-url="{{ .RelPermalink }}"></span>
             comments

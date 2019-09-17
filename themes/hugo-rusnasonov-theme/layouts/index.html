@@ -1,15 +1,15 @@
 {{ define "main" }}
 
 {{ range .Paginator.Pages }}
-    <article>
-        <header>
-            {{ partial "article/article-title.html" . }}
-            {{ partial "article/article-meta.html" . }}
-        </header>
-        <section>
-            {{ partial "article/article-summary.html" . }}
-        </section>
-    </article>
+<article class="pv4 georgia">
+    <header>
+        {{ partial "article/article-title.html" . }}
+        {{ partial "article/article-meta.html" . }}
+    </header>
+    <section>
+        {{ partial "article/article-summary.html" . }}
+    </section>
+</article>
 {{ end }}
 
 {{ partial "pagination.html" . }}
@@ -17,5 +17,5 @@
 {{ end }}
 
 {{ define "title" }}
-    {{ .Site.Title }}
+{{ .Site.Title }}
 {{ end }}

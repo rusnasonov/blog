@@ -21,11 +21,5 @@ jobs:
         github_token: ${{ secrets.GH_TOKEN }}
         push_branch: 'master'
         commit_message: 'publish'
-    - name: build Gihub Pages
-      uses: actions/github-script@0.2.0
-      with:
-        github-token: ${{ secrets.GH_TOKEN }}
-        script: |
-            github.repos.requestPageBuild({owner: 'rusnasonov', repo: 'blog'})
 
       

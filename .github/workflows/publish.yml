@@ -21,6 +21,10 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         push_branch: 'master'
         commit_message: 'publish'
-
+    - uses: actions/github-script@0.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.repos.requestPageBuild('rusnasonov', 'blog')
 
       

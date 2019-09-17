@@ -26,6 +26,6 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-            github.repos.requestPageBuild('rusnasonov', 'blog')
+            github.repos.requestPageBuild({owner: 'rusnasonov', repo: 'blog'})
 
       

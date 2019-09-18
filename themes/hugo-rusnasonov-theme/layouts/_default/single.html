@@ -1,16 +1,16 @@
 {{ define "main" }}
-    <article>
-        <header>
-            {{ partial "article/article-title.html" . }}
-            {{ partial "article/article-meta.html" . }}
-        </header>
-        <section>
-            {{ partial "article/article-content.html" . }}
-        </section>
-        <div id="remark42"></div>
-    </article>        
+<article class="pv4 georgia">
+    <header>
+        {{ partial "article/article-title.html" . }}
+        {{ partial "article/article-meta.html" . }}
+    </header>
+    <section>
+        {{ partial "article/article-content.html" . }}
+    </section>
+    <div id="remark42"></div>
+</article>
 {{ end }}
 
 {{ define "title" }}
-    {{ .Title }}
+{{ .Title }}
 {{ end }}

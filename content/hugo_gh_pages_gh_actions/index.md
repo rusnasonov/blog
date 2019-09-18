@@ -38,32 +38,33 @@ ogimage: "https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_
 1. Добавить директорию `docs` в `.gitignore`. То, что мы собираем локально, пусть и остается локально.
 2. Создать в корне проекта директорию `.github/worflows`, и положить туда файлик `publish.yml` со следующим содержимым:
 
-{{< highlight yaml >}}
+    {{< highlight yaml >}}
 name: publish
 
 on:
-  push:
+push:
     branches:
     - master
     
 jobs:
-  build:
+build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@master
-      with:
+    uses: actions/checkout@master
+    with:
         ref: master
     - name: build
-      uses: github-actions-x/hugo@master
+    uses: github-actions-x/hugo@master
     - name: push
-      uses: github-actions-x/commit@master
-      with:
+    uses: github-actions-x/commit@master
+    with:
         github-token: ${{ secrets.GH_TOKEN }}
         push-branch: 'master'
         commit-message: 'settings'
         force-add: 'true'
-{{< / highlight >}}
-1. Получить [GitHub токен](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line). Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на `repo`.
-2. Зайти в настройки проекта GitHub (таб с шестеренкой) -> `Secrets`. Нужно создать секрет с именем `GH_TOKEN`, и вставить токен с предыдущего шага.
-3. Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит `publish`, и в GitHub Pages появятся изменения.
+    {{< / highlight >}}
+
+3. Получить [GitHub токен](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line). Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на `repo`.
+4. Зайти в настройки проекта GitHub (таб с шестеренкой) -> `Secrets`. Нужно создать секрет с именем `GH_TOKEN`, и вставить токен с предыдущего шага.
+5. Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит `publish`, и в GitHub Pages появятся изменения.

@@ -33,7 +33,7 @@
     
 
     <title>
-    Как выложить свой сайт на Hugo в GitHub
+Как выложить свой сайт на Hugo в GitHub
 </title>
 
     <link href="" rel="alternate" type="application/rss+xml" title="Ruslan Nasonov" />
@@ -41,7 +41,7 @@
 
     <link rel="stylesheet" href="/fontawesome/css/all.min.css">
 
-    
+
     <link rel="stylesheet" href="/css/tachyons.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/syntax.css">
@@ -78,36 +78,36 @@
             </a>
         </div>
     </header>
-    <main class="mw7 flex-auto pa2">
+    <main class="mw7 w-100 flex-auto pa3">
         
-    <article>
-        <header>
-            <h1>
+<article class="pv4 georgia">
+    <header>
+        <h1>
     <a href="/hugo_gh_pages_gh_actions/" class="f2 lh-copy black link hover-blue">Как выложить свой сайт на Hugo в GitHub </a>
 </h1>
-            <section>
-    <ul class="list flex gray pl0 ml0">
-        <li class="ph1 nowrap">
+        <section>
+    <ul class="list flex flex-wrap gray pl0 ml0">
+        <li class="ph1 pt1">
             <time datetime='2019-09-17T00:00:00.000&#43;00:00' itemprop="datePublished">2019-09-17</time>
         </li>
-        <li class="ph1 nowrap">
-            441 words
+        <li class="ph1 pt1">
+            438 words
         </li>
-        <li class="ph1">
+        <li class="ph1 pt1">
             
                 <a href="https://rusnasonov.com/tags/receipt" class="no-underline underline-hover gray">#receipt</a>
             
         </li>
-        <li class="ph1 nowrap">
+        <li class="ph1 pt1">
             <i class="far fa-comment fa-lg"></i>
             <span class="remark42__counter" data-url="/hugo_gh_pages_gh_actions/"></span>
             comments
         </li>
     </ul>
 </section>
-        </header>
-        <section>
-            <section class="pa2 pa2-ns f4 lh-copy">
+    </header>
+    <section>
+        <section class="pa2 pa2-ns f4 lh-copy">
         <p>Когда я захотел завести свою страницу в интернете, то сразу возник вопрос — а где ее разместить и как сделать? Вариантов несколько: платформа типа Blogger/LiveJournal, свой сервер и Wordpress/верстать самому/взять генератор сайтов. Готовые платформы не очень гибкие, а поддерживать решение на своем сервере не хочется. Да и свистелки мне были особо не нужны — только текст и картинки. В итоге я пришел к связке <a href="https://gohugo.io/">Hugo</a> + <a href="https://pages.github.com/">Github Pages</a> + <a href="https://github.com/features/actions">Github Actions</a>.</p>
 
 <p><img src="https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_gh_pages_gh_actions/image.png" alt="image" /></p>
@@ -137,40 +137,45 @@
 
 <ol>
 <li>Добавить директорию <code>docs</code> в <code>.gitignore</code>. То, что мы собираем локально, пусть и остается локально.</li>
-<li>Создать в корне проекта директорию <code>.github/worflows</code>, и положить туда файлик <code>publish.yml</code> со следующим содержимым:</li>
-</ol>
 
-<p><div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">name<span class="p">:</span><span class="w"> </span>publish<span class="w">
+<li><p>Создать в корне проекта директорию <code>.github/worflows</code>, и положить туда файлик <code>publish.yml</code> со следующим содержимым:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">name<span class="p">:</span><span class="w"> </span>publish<span class="w">
 </span><span class="w">
 </span><span class="w"></span>on<span class="p">:</span><span class="w">
-</span><span class="w">  </span>push<span class="p">:</span><span class="w">
+</span><span class="w"></span>push<span class="p">:</span><span class="w">
 </span><span class="w">    </span>branches<span class="p">:</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span>master<span class="w">
 </span><span class="w">    
 </span><span class="w"></span>jobs<span class="p">:</span><span class="w">
-</span><span class="w">  </span>build<span class="p">:</span><span class="w">
+</span><span class="w"></span>build<span class="p">:</span><span class="w">
 </span><span class="w">    </span>runs-on<span class="p">:</span><span class="w"> </span>ubuntu-latest<span class="w">
 </span><span class="w">    </span>steps<span class="p">:</span><span class="w">
 </span><span class="w">    </span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>checkout<span class="w">
-</span><span class="w">      </span>uses<span class="p">:</span><span class="w"> </span>actions/checkout@master<span class="w">
-</span><span class="w">      </span>with<span class="p">:</span><span class="w">
+</span><span class="w">    </span>uses<span class="p">:</span><span class="w"> </span>actions/checkout@master<span class="w">
+</span><span class="w">    </span>with<span class="p">:</span><span class="w">
 </span><span class="w">        </span>ref<span class="p">:</span><span class="w"> </span>master<span class="w">
 </span><span class="w">    </span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>build<span class="w">
-</span><span class="w">      </span>uses<span class="p">:</span><span class="w"> </span>github-actions-x/hugo@master<span class="w">
+</span><span class="w">    </span>uses<span class="p">:</span><span class="w"> </span>github-actions-x/hugo@master<span class="w">
 </span><span class="w">    </span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>push<span class="w">
-</span><span class="w">      </span>uses<span class="p">:</span><span class="w"> </span>github-actions-x/commit@master<span class="w">
-</span><span class="w">      </span>with<span class="p">:</span><span class="w">
+</span><span class="w">    </span>uses<span class="p">:</span><span class="w"> </span>github-actions-x/commit@master<span class="w">
+</span><span class="w">    </span>with<span class="p">:</span><span class="w">
 </span><span class="w">        </span>github-token<span class="p">:</span><span class="w"> </span>${{<span class="w"> </span>secrets.GH_TOKEN<span class="w"> </span>}}<span class="w">
 </span><span class="w">        </span>push-branch<span class="p">:</span><span class="w"> </span><span class="s1">&#39;master&#39;</span><span class="w">
 </span><span class="w">        </span>commit-message<span class="p">:</span><span class="w"> </span><span class="s1">&#39;settings&#39;</span><span class="w">
-</span><span class="w">        </span>force-add<span class="p">:</span><span class="w"> </span><span class="s1">&#39;true&#39;</span></code></pre></div>
-1. Получить <a href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">GitHub токен</a>. Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на <code>repo</code>.
-2. Зайти в настройки проекта GitHub (таб с шестеренкой) -&gt; <code>Secrets</code>. Нужно создать секрет с именем <code>GH_TOKEN</code>, и вставить токен с предыдущего шага.
-3. Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит <code>publish</code>, и в GitHub Pages появятся изменения.</p>
+</span><span class="w">        </span>force-add<span class="p">:</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="w">
+</span><span class="w">    </span></code></pre></div></li>
+
+<li><p>Получить <a href="https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line">GitHub токен</a>. Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на <code>repo</code>.</p></li>
+
+<li><p>Зайти в настройки проекта GitHub (таб с шестеренкой) -&gt; <code>Secrets</code>. Нужно создать секрет с именем <code>GH_TOKEN</code>, и вставить токен с предыдущего шага.</p></li>
+
+<li><p>Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит <code>publish</code>, и в GitHub Pages появятся изменения.</p></li>
+</ol>
 </section>
-        </section>
-        <div id="remark42"></div>
-    </article>        
+    </section>
+    <div id="remark42"></div>
+</article>
 
     </main>
     <footer>

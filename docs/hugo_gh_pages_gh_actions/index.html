@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="vh-100 w-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="Расскажу как собрать свой сайт при помощи Github Actions, и выложить на Github Pages.">
+    <meta name="keywords" content="hugo,github,github actions,github pages,хостинг,хостинг блога,">
+    <meta name="author" content="Ruslan Nasonov">
+
+    <meta name="yandex-verification" content="920f76515b387fe6" />
+
+    <meta property="article:published_time" content=2019-09-17&#32;00:00:00.000 />
+    <meta property="site_name" content="Ruslan Nasonov">
+    <meta property="og:title" content="Как выложить свой сайт на Hugo в GitHub" />
+    <meta property="og:description"
+        content="Расскажу как собрать свой сайт при помощи Github Actions, и выложить на Github Pages." />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:url" content="https://rusnasonov.com/hugo_gh_pages_gh_actions/" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:image" content="https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_gh_pages_gh_actions/image.png" />
+    
+
+    <title>
+    Как выложить свой сайт на Hugo в GitHub
+</title>
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Ruslan Nasonov" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <meta name="generator" content="Hugo 0.55.6" />
+
+    
+</head>
+
+<body class="flex flex-column items-center serif">
+    <header class="flex flex-column items-center pa3">
+        <a href="https://rusnasonov.com/" id="header-avatar">
+            <img class="br-100 h4" src="/images/avatar.jpg">
+        </a>
+        <a href="https://rusnasonov.com/" class="fw6 db gray link hover-blue">
+            Ruslan Nasonov
+        </a>
+        <div class="pv2 flex">
+            <a href="https://github.com/rusnasonov" class="link hover-silver mh1">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a href="https://goodreads.com/rusnasonov" class="link hover-silver mh1">
+                <i class="fab fa-goodreads fa-lg"></i>
+            </a>
+            <a href="https://instagram.com/rusnasonov" class="link hover-silver mh1">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://twitter.com/rusnasonov" class="link hover-silver mh1">
+                <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://stackoverflow.com/users/2949830/rusnasonov" class="link hover-silver mh1">
+                <i class="fab fa-stack-overflow fa-lg"></i>
+            </a>
+        </div>
+    </header>
+    <main class="mw7 flex-auto pa2">
+        
+    <article>
+        <header>
+            <h1>
+    <a href="/hugo_gh_pages_gh_actions/" class="f2 lh-copy black link hover-blue">Как выложить свой сайт на Hugo в GitHub </a>
+</h1>
+            <section>
+    <ul class="list flex gray pl0 ml0">
+        <li class="ph1 nowrap">
+            <time datetime='2019-09-17T00:00:00.000&#43;00:00' itemprop="datePublished">2019-09-17</time>
+        </li>
+        <li class="ph1 nowrap">
+            479 words
+        </li>
+        <li class="ph1">
+            
+                <a href="https://rusnasonov.com/tags/receipt" class="no-underline underline-hover gray">#receipt</a>
+            
+        </li>
+        <li class="ph1 nowrap">
+            <i class="far fa-comment fa-lg"></i>
+            <span class="remark42__counter" data-url="/hugo_gh_pages_gh_actions/"></span>
+            comments
+        </li>
+    </ul>
+</section>
+        </header>
+        <section>
+            <section class="pa2 pa2-ns f4 lh-copy">
+        <p>Когда я захотел завести свою страницу в интернете, то сразу возник вопрос — а где ее разместить и как сделать? Вариантов несколько: платформа типа Blogger/LiveJournal, свой сервер и Wordpress/верстать самому/взять генератор сайтов. Готовые платформы не очень гибкие, а поддерживать решение на своем сервере не хочется. Да и свистелки мне были особо не нужны — только текст и картинки. В итоге я пришел к связке <a href="https://gohugo.io/">Hugo</a> + <a href="https://pages.github.com/">Github Pages</a> + <a href="https://github.com/features/actions">Github Actions</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_gh_pages_gh_actions/image.png" alt="image" /></p>
+
+<p>В двух словах что есть что.</p>
+
+<ul>
+<li><a href="https://gohugo.io/">Hugo</a> — генератор статических сайтов, создает html на основе markdown. Работает очень шустро, и мне показался наиболее понятным из существующих генераторов.</li>
+<li><a href="https://pages.github.com/">Github Pages</a> — хостинг статических сайтов. Можно добавить <code>index.html</code> в свой GitHub репозиторий, и он автоматичеки будет доступен на <code>https://username.github.io/repo</code>. Можно привязать свой домен.</li>
+<li><a href="https://github.com/features/actions">Github Actions</a> — сервис для CI/CD. Может много чего, нам пригодится для автоматической сборки сайта.</li>
+</ul>
+
+<p>Я не буду останавливаться на том, как установить и использовать Hugo, на сайте есть прекрасная документация.</p>
+
+<h3 id="настройка-hugo">Настройка Hugo</h3>
+
+<p>У GitHub Pages есть два режима работы — хостить сайт из корня master ветки, из директории <code>/docs</code> в master ветке, или корня ветки gh-pages. Нам нужен второй режим, так как в корне будут лежать настройки и контент, а собранный сайт в отдельно директории.  Для этого в <code>config.toml</code> нужно добавить настройку <code>publishDir = &quot;docs&quot;</code>. Если запустить команду <code>hugo</code>, то можно увидеть директорию <code>docs</code> с собранным html.</p>
+
+<h3 id="настройка-github-pages">Настройка GitHub Pages</h3>
+
+<p>Тут все просто, особенно если не нужен свой домен. Нужно <a href="https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages">натыкать пару галочек</a> в настройках проекта. В случае если хочется использовать свое доменно имя, нужно будет у провайдера доменных имен прописать DNS сервер, все это хорошо описано в <a href="https://help.github.com/en/articles/using-a-custom-domain-with-github-pages">документации</a>.</p>
+
+<h3 id="настройка-github-actions">Настройка GitHub Actions</h3>
+
+<p>На данный момент уже есть настроенный Hugo и GitHub pages. В принципе на этом можно и остановиться — написал статью, собрал сайт, закоммитил, запушил, и готово. Но хочется же все автоматизировать ;)
+Довольно часто, во время написания, Hugo запускается с параметрами для сборки черновиков, каких-то других тем, или вообще не запускается. Получается что после отправки версии в GitHub, мы можем получить не то, что хотим. Можно исключить человеческий фактор, и переложить сборку проекта на плечи GitHub Actions. Для этого нужно.</p>
+
+<ol>
+<li>Добавить директорию <code>docs</code> в <code>.gitignore</code>. То, что мы собираем локально, пусть и остается локально.</li>
+<li>Создать в корне проекта директорию <code>.github/worflows</code>, и положить туда файлик <code>publish.yml</code> со следующим содержимым:
+```yaml
+name: publish</li>
+</ol>
+
+<p>on:
+  push:
+    branches:
+    - master</p>
+
+<p>jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+      with:
+        ref: master
+    - name: build
+      uses: github-actions-x/hugo@master
+    - name: push
+      uses: github-actions-x/commit@master
+      with:
+        github-token: ${{ secrets.GH_TOKEN }}
+        push-branch: &lsquo;master&rsquo;
+        commit-message: &lsquo;settings&rsquo;
+        force-add: &lsquo;true&rsquo;
+``<code>
+3. Получить (GitHub токен)[https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line]. Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на</code>repo<code>.
+4. Зайти в настройки проекта GitHub (таб с шестеренкой) -&gt;</code>Secrets<code>. Нужно создать секрет с именем</code>GH_TOKEN<code>, и вставить токен с предыдущего шага.
+5. Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит</code>publish`, и в GitHub Pages появятся изменения.</p>
+</section>
+        </section>
+        <div id="remark42"></div>
+    </article>        
+
+    </main>
+    <footer>
+        <p>
+            &copy; 2019 Ruslan Nasonov&nbsp;
+        </p>
+        <div>
+    
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+     
+        ym( 46434456 , "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true
+        });
+     </script>
+    
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138674749-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138674749-1');
+    </script>
+
+
+    <script>
+        var remark_config = {
+          site_id: 'rusnasonov',
+          max_shown_comments: 20, 
+          theme: 'light' 
+        };
+      
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://comments.rusnasonov.com/web/embed.js'; 
+          (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+    <script>
+        var remark_config = {
+          site_id: 'rusnasonov',
+        };
+      
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://comments.rusnasonov.com/web/counter.js'; 
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>      
+</div>
+    </footer>
+</body>
+
+</html>

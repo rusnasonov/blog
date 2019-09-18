@@ -32,6 +32,35 @@ ogimage: "https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_
 
 ### Настройка GitHub Actions
 
-На данный момент уже есть настроенный Hugo и GitHub pages. В принципе на этом можно и остановиться — написал статью, собрал сайт, закоммитил, запушил, и готов. Но хочется же все автоматизировать ;)
+На данный момент уже есть настроенный Hugo и GitHub pages. В принципе на этом можно и остановиться — написал статью, собрал сайт, закоммитил, запушил, и готово. Но хочется же все автоматизировать ;)
+Довольно часто, во время написания, Hugo запускается с параметрами для сборки черновиков, каких-то других тем, или вообще не запускается. Получается что после отправки версии в GitHub, мы можем получить не то, что хотим. Можно исключить человеческий фактор, и переложить сборку проекта на плечи GitHub Actions. Для этого нужно.
 
-...
+1. Добавить директорию `docs` в `.gitignore`. То, что мы собираем локально, пусть и остается локально.
+2. Создать в корне проекта директорию `.github/worflows`, и положить туда файлик `publish.yml` со следующим содержимым:
+```yaml
+name: publish
+
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+      with:
+        ref: master
+    - name: build
+      uses: github-actions-x/hugo@master
+    - name: push
+      uses: github-actions-x/commit@master
+      with:
+        github-token: ${{ secrets.GH_TOKEN }}
+        push-branch: 'master'
+        commit-message: 'publish'
+        force-add: 'true'
+```
+3. Получить 

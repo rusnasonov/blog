@@ -4,11 +4,11 @@ description: "Расскажу как собрать свой сайт при п
 keywords: ["hugo", "github", "github actions", "github pages", "хостинг", "хостинг блога"]
 date: 2019-09-17
 tags: ["receipt"]
-draft: true
+draft: false
 ogimage: "https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_gh_pages_gh_actions/image.png"
 ---
 
-Когда я захотел завести свою страницу в интернете, то сразу возник вопрос — а где ее разместить и как сделать? Вариантов несколько: платформа типа Blogger/LiveJournal, свой сервер и Wordpress/верстать самому/взять генератор сайтов. Готовые платформы не очень гибкие, а поддерживать решение на своем сервере не хочется. Да и свистелки мне были особо не нужны — только текст. В итоге я пришел к связке [Hugo](https://gohugo.io/) + [Github Pages](https://pages.github.com/) + [Github Actions](https://github.com/features/actions).
+Когда я захотел завести свою страницу в интернете, то сразу возник вопрос — а где ее разместить и как сделать? Вариантов несколько: платформа типа Blogger/LiveJournal, свой сервер и Wordpress/верстать самому/взять генератор сайтов. Готовые платформы не очень гибкие, а поддерживать решение на своем сервере не хочется. Да и свистелки мне были особо не нужны — только текст и картинки. В итоге я пришел к связке [Hugo](https://gohugo.io/) + [Github Pages](https://pages.github.com/) + [Github Actions](https://github.com/features/actions).
 
 <!--more-->
 
@@ -24,7 +24,7 @@ ogimage: "https://raw.githubusercontent.com/rusnasonov/blog/master/content/hugo_
 
 ### Настройка Hugo
 
-У GitHub Pages есть два режима работы — хостить сайт из корня master ветки, из директории `/docs` в master ветке, или корня ветки gh-pages. Нам нужен второй режим, так как в корне будут лежать настройки и контент, а собранный сайт как раз таки в отдельно директории.  Для этого в `config.toml` нужно добавить настройку `publishDir = "docs"`. Если запустить команду `hugo`, то можно увидеть директорию `docs` с собранным html.
+У GitHub Pages есть два режима работы — хостить сайт из корня master ветки, из директории `/docs` в master ветке, или корня ветки gh-pages. Нам нужен второй режим, так как в корне будут лежать настройки и контент, а собранный сайт в отдельно директории.  Для этого в `config.toml` нужно добавить настройку `publishDir = "docs"`. Если запустить команду `hugo`, то можно увидеть директорию `docs` с собранным html.
 
 ### Настройка GitHub Pages
 
@@ -60,7 +60,9 @@ jobs:
       with:
         github-token: ${{ secrets.GH_TOKEN }}
         push-branch: 'master'
-        commit-message: 'publish'
+        commit-message: 'settings'
         force-add: 'true'
 ```
-3. Получить 
+3. Получить (GitHub токен)[https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line]. Нужен чтобы коммит из Github Actions происходил от лица пользователя, и триггерился запуск сборки Github Pages. Права нужно выдать на `repo`.
+4. Зайти в настройки проекта GitHub (таб с шестеренкой) -> `Secrets`. Нужно создать секрет с именем `GH_TOKEN`, и вставить токен с предыдущего шага.
+5. Теперь можно запушить проект в GitHub, он автоматически соберется, появится коммит `publish`, и в GitHub Pages появятся изменения.

@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@v1.x
+      uses: actions/checkout@v1
       with:
         ref: master
     - name: build

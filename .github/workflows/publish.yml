@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@master
       with:
         ref: master
     - name: build
       uses: github-actions-x/hugo@master
     - name: push
-      uses: github-actions-x/commit@master
+      uses: github-actions-x/commit@v1
       with:
         github_token: ${{ secrets.GH_TOKEN }}
         push_branch: 'master'

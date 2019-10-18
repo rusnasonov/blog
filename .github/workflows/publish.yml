@@ -22,7 +22,4 @@ jobs:
         push-branch: 'master'
         commit-message: 'publish'
         force-add: 'true'
-        files:
-            - a
-            - b
-            - c
+        files: dirA/ fileB fileC dirF/q

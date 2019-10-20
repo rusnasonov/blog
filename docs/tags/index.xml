@@ -38,5 +38,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>me</title>
+      <link>https://rusnasonov.com/tags/me/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/tags/me/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

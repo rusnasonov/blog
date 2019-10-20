@@ -56,5 +56,14 @@
       <description>&lt;p&gt;В VSCode есть довольно много крутых расширений, и одно из них это &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github&#34;&gt;Github Pull Request&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Обо мне</title>
+      <link>https://rusnasonov.com/about/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/about/</guid>
+      <description>&lt;p&gt;Меня зовут Руслан Насонов, я разразботчик и тимлид. Закончил Факультет Прикладной Математики и Информатики в &lt;a href=&#34;https://www.nstu.ru/&#34;&gt;НГТУ&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

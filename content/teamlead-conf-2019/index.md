@@ -10,7 +10,7 @@ keywords: [
 ]
 date: 2019-09-23
 tags: ["conference"]
-draft: true
+draft: false
 ogimage: "https://raw.githubusercontent.com/rusnasonov/blog/master/content/teamlead-conf-2019/image.png"
 ---
 

@@ -22,3 +22,5 @@ jobs:
         push-branch: 'master'
         commit-message: 'publish'
         force-add: 'true'
+        email: rus.nasonov@gmail.com
+        name: Ruslan Nasonov

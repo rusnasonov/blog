@@ -16,7 +16,7 @@ jobs:
             - name: build
               uses: github-actions-x/hugo@master
             - name: push
-              uses: github-actions-x/commit@master
+              uses: github-actions-x/commit@#12_fix-multiple-files
               with:
                   github-token: ${{ secrets.GH_TOKEN }}
                   push-branch: "master"

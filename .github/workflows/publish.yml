@@ -24,4 +24,3 @@ jobs:
                   force-add: "true"
                   email: rus.nasonov@gmail.com
                   name: Ruslan Nasonov
-                  files: config.toml README.md docs/

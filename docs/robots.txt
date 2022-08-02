@@ -1,3 +1,0 @@
-Sitemap: https://rusnasonov.com/sitemap.xml
-
-User-agent: *

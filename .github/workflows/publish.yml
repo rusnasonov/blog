@@ -5,6 +5,9 @@ on:
         branches:
             - master
 
+env:
+    GO_VERSION: 1.18
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -13,14 +16,13 @@ jobs:
               uses: actions/checkout@master
               with:
                   ref: master
-            - name: build
+                  token: ${{ secrets.GH_TOKEN || github.token }}
+            - name: build blog
               uses: github-actions-x/hugo@master
-            - name: push
-              uses: github-actions-x/commit@master
+            - name: build server
+              uses: actions/setup-go@v3
               with:
-                  github-token: ${{ secrets.GH_TOKEN }}
-                  push-branch: "master"
-                  commit-message: "publish"
-                  force-add: "true"
-                  email: rus.nasonov@gmail.com
-                  name: Ruslan Nasonov
+                  go-version: ${{ env.GO_VERSION }}
+                  check-latest: true
+            - run: cd server/ && go build -o blog . 
+

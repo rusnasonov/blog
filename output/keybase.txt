@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/rusnasonov
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rusnasonov.com
+  * I am rusnasonov (https://keybase.io/rusnasonov) on keybase.
+  * I have a public key with fingerprint A3BB FC1F 057F D913 00A8  7EE8 58D1 F9FF B8E2 7A14
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f69c83f0e1640f7b11f45c924eb62391ca4fb124de58e198447bce998d4b1e990a",
+      "fingerprint": "a3bbfc1f057fd91300a87ee858d1f9ffb8e27a14",
+      "host": "keybase.io",
+      "key_id": "58d1f9ffb8e27a14",
+      "kid": "010131a0a15c0ecf73b0247214dbb0e174699bd48b35bbffff87dea3b1fec9bfaaf40a",
+      "uid": "2980e08ca58d245271b693d13095d219",
+      "username": "rusnasonov"
+    },
+    "service": {
+      "hostname": "rusnasonov.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1574905880,
+  "expire_in": 157680000,
+  "prev": "3180bea70019475ccf16c109806922516e4db7a665ea3b6488b4754992b09fb2",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUn9MlVUYvoAwQpSEKwYFyEcbzgGe893v1wGToSZwLf9IF0nS9ftxPvgm3O9y
+f6CICCQzHNwNw2myUBMZ5UQwndCcUbYmwTUznGjBKKRAbBNBBDKjc1n8Ve8/7857
+nud5n/fdW7vEzxDo886t2bmOob1Gn54HkiFncNXGEkrSlWIquYTahecTzleww2nZ
+pSlUMgUgDVQOyYJJBRhyDFB5CUKVYWVEM1jiaBOCssioEqQZBbMChkhgGF6SMUKC
+wkiQZCBSCZSqWXOx3WbXrE4iK5okSZWhClheVRA0ASAKPMYCKyhQRaoqCZjmRcgQ
+Yp7u8DKIOUl04CRNJzXysMzb+x/8gm8ATVAEImRlgGWVN0mAZngaMookkUl4hkNI
+UhhBMrHECgmBVzCxBVUsI0kVRZWZ9+2al6ORADAQZJE0pBmW5qHEIZNCjCNWoSHy
+Ah3YbhULMEHbXQ6r6NCtehFVmkCRepEmY+9qvbP8B5Mk6wWEb7PrTl3W88lfntNp
+cyR7uc5imxe8G0uWf2UskmZVyC4JowjbHZpupZIhQcpOzasLWZ5BgBUEkEDhPTbN
+ji2adb7MCYCEtw8uIpImKOQACYs8ABAxPCvLKuRkCMigHKJpFnKYrIoXOY71roVj
+BEEiMAYhWgJIlWjKO1mhVfeKE6NiLhF1aLlW0emyY6o06JCvaZHBJ9AQFR67qPHK
+XzH+ZffCDJ/uH104QH9f7/UZgl54caHibA6Z2+Sa3KdsmBvMbDoeML42uysnMeB6
+3cMK+9UBujPt7aiMD7LDd3zY89uK9eezxuLE6fsT+zveVQxL04aybDtWtl78vXNM
+a3jkivKzbal6ErW5vrfto6mUXLUkcuibN18xp+dcKJyZsY2LVZa5Ez8emfw28ruR
+7DOhQlSUh28QUicTXzs0lLjErp4xKVczImaqguLLU0anGkOHQ+4eGfY3TB39NXxn
+9edj4+FKW0+q2ehIeui7LSL9vYhuS2wwOu7JXBtPxSvtTY4JXN+J1O7x2tgwFJis
+X3+sdmT95BLDc9d/URl95y44uDVAM7ZsPVvPLG593t02ACoij9UVGa49bXpws73x
+9GdV7uS9JwO0EYtxWc0qnG4p6x/q62VcxpnMRt9zBbcvPHGNvO9+PBMnT6wpz7up
+RS/ftPro6KVP3ri07GJevLN+6c741lkzcLUP17gOXz6BTvnr0/IvMVRGWMxLnlJQ
++JXR/PL9v1eUK/fWhN75o+5G9cjZbQfTMuo2ug19BZ7YmtQbPYZr5qI+bsQcM/vW
++Vdf98Q0Z/tX5rqv4Pxg2BWwuGLLOH667sC52rzpL42Zf25/1BLdu3rAcKuMSjnc
+3HT5h5bNdk9/sHXYvfJUZ4P+8YY937emFVQ+G/ab/tpzrObZz/0H3NuLq/ctd8fF
+uU7fXvd8MKRnd5c+NXVyMucf
+=3tqs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rusnasonov
+
+==================================================================

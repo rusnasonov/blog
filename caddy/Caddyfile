@@ -1,0 +1,4 @@
+rusnasonov.com {
+    reverse_proxy blog:3000
+}
+

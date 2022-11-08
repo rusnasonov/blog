@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ruslan Nasonov</title>
+    <link>https://rusnasonov.com/tags/</link>
+    <description>Recent content in Tags on Ruslan Nasonov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru,en</language>
+    <lastBuildDate>Mon, 23 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rusnasonov.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>conference</title>
+      <link>https://rusnasonov.com/tags/conference/</link>
+      <pubDate>Mon, 23 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>receipt</title>
+      <link>https://rusnasonov.com/tags/receipt/</link>
+      <pubDate>Tue, 17 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/tags/receipt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://rusnasonov.com/tags/vscode/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>me</title>
+      <link>https://rusnasonov.com/tags/me/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      
+      <guid>https://rusnasonov.com/tags/me/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

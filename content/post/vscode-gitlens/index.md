@@ -26,8 +26,6 @@ ogimage: "https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images
 * Подсветка измененных строк одного коммита.
 * Просмотр изменений в коммите.
 
-{{< img "image.png" "">}}
-
 ### Просмотр информации о репозитории
 
 * Просмотр локальных и удаленных веток.
@@ -37,6 +35,5 @@ ogimage: "https://raw.githubusercontent.com/eamodio/vscode-gitlens/master/images
 * Поиск коммитов по автору, файлу, сообщению, хешу.
 
 
-{{< img "image1.png" "">}}
 
 Расширение очень годное, рекомендую к использованию!

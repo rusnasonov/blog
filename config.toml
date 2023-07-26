@@ -1,7 +1,7 @@
 baseurl = "https://rusnasonov.com/"
 languageCode = "ru,en"
 title = "Ruslan Nasonov"
-theme = "hugo-rusnasonov-theme"
+theme = "hugo-texify2"
 publishDir = "output"
 sectionPagesMenu = "main"
 enableRobotsTXT = true
@@ -21,3 +21,22 @@ keywords = ["программирование", "блог", "it", "ит", "бл�
 author = "Ruslan Nasonov"
 avatar = "/images/avatar.jpg"
 yandexMetrica = 46434456
+
+[params.commentEngine]
+code = """
+<script src="https://giscus.app/client.js"
+        data-repo="rusnasonov/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnk3NjY3MTY2OQ=="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOBJHqtc4CYIxL"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="ru"
+        crossorigin="anonymous"
+        async>
+</script>
+"""

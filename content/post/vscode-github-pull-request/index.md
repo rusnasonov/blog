@@ -24,6 +24,4 @@ ogimage: "https://code.visualstudio.com/assets/blogs/2018/09/10/github_pr_hero.p
 6. Указывать теги и ревьюеров.
 7. Работать с GitHub Enterprise.
 
-{{< img "image.jpg" "">}}
-
 Для сравнения, в [IDE от JetBrains](https://blog.jetbrains.com/idea/2018/10/intellij-idea-2018-3-eap-github-pull-requests-and-more) тоже есть возможность работать с pr, но функциональность сильно скуднее - нельзя комментировать, смотреть комментарии, подтвержать и мержить, неудобная фильтрация.
